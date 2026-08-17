@@ -10,7 +10,7 @@ const PRODUCTS_DATA = [
     "price": 51141,
     "compatibility": "Sony",
     "source_file": "consoles.xlsx",
-    "image": "images/console-images/PS5 Disc Edition.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/console-images/PS5%20Disc%20Edition.jpg"
   },
   {
     "id": 2,
@@ -23,7 +23,7 @@ const PRODUCTS_DATA = [
     "price": 51141,
     "compatibility": "Sony",
     "source_file": "consoles.xlsx",
-    "image": "images/console-images/PS5 Digital Edition.png"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/console-images/PS5%20Digital%20Edition.png"
   },
   {
     "id": 3,
@@ -36,7 +36,7 @@ const PRODUCTS_DATA = [
     "price": 51141,
     "compatibility": "Sony",
     "source_file": "consoles.xlsx",
-    "image": "images/console-images/PS5 Slim Disc Edition.png"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/console-images/PS5%20Slim%20Disc%20Edition.png"
   },
   {
     "id": 4,
@@ -49,7 +49,7 @@ const PRODUCTS_DATA = [
     "price": 47490,
     "compatibility": "Sony",
     "source_file": "consoles.xlsx",
-    "image": "images/console-images/PS5 Slim Digital Edition.png"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/console-images/PS5%20Slim%20Digital%20Edition.png"
   },
   {
     "id": 5,
@@ -62,7 +62,7 @@ const PRODUCTS_DATA = [
     "price": 116991,
     "compatibility": "Sony",
     "source_file": "consoles.xlsx",
-    "image": "images/console-images/PS5 Pro.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/console-images/PS5%20Pro.jpg"
   },
   {
     "id": 6,
@@ -75,7 +75,7 @@ const PRODUCTS_DATA = [
     "price": 29031,
     "compatibility": "Sony",
     "source_file": "consoles.xlsx",
-    "image": "images/console-images/PS4 Slim.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/console-images/PS4%20Slim.jpg"
   },
   {
     "id": 7,
@@ -88,7 +88,7 @@ const PRODUCTS_DATA = [
     "price": 34065,
     "compatibility": "Sony",
     "source_file": "consoles.xlsx",
-    "image": "images/console-images/PS4 Pro.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/console-images/PS4%20Pro.jpg"
   },
   {
     "id": 8,
@@ -101,7 +101,7 @@ const PRODUCTS_DATA = [
     "price": 49271,
     "compatibility": "Microsoft",
     "source_file": "consoles.xlsx",
-    "image": "images/console-images/Xbox Series X.png"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/console-images/Xbox%20Series%20X.png"
   },
   {
     "id": 9,
@@ -114,7 +114,7 @@ const PRODUCTS_DATA = [
     "price": 30441,
     "compatibility": "Microsoft",
     "source_file": "consoles.xlsx",
-    "image": "images/console-images/Xbox Series S 512GB.png"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/console-images/Xbox%20Series%20S%20512GB.png"
   },
   {
     "id": 10,
@@ -127,7 +127,7 @@ const PRODUCTS_DATA = [
     "price": 62291,
     "compatibility": "Microsoft",
     "source_file": "consoles.xlsx",
-    "image": "images/console-images/Xbox Series S 1TB.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/console-images/Xbox%20Series%20S%201TB.webp"
   },
   {
     "id": 11,
@@ -140,7 +140,7 @@ const PRODUCTS_DATA = [
     "price": 30791,
     "compatibility": "Microsoft",
     "source_file": "consoles.xlsx",
-    "image": "images/console-images/Xbox One S.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/console-images/Xbox%20One%20S.jpg"
   },
   {
     "id": 12,
@@ -153,7 +153,7 @@ const PRODUCTS_DATA = [
     "price": 40491,
     "compatibility": "Microsoft",
     "source_file": "consoles.xlsx",
-    "image": "images/console-images/Xbox One X.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/console-images/Xbox%20One%20X.jpg"
   },
   {
     "id": 13,
@@ -166,7 +166,7 @@ const PRODUCTS_DATA = [
     "price": 53949,
     "compatibility": "Nintendo",
     "source_file": "consoles.xlsx",
-    "image": "images/console-images/Nintendo Switch 2.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/console-images/Nintendo%20Switch%202.jpg"
   },
   {
     "id": 14,
@@ -179,7 +179,7 @@ const PRODUCTS_DATA = [
     "price": 23391,
     "compatibility": "Nintendo",
     "source_file": "consoles.xlsx",
-    "image": "images/console-images/Nintendo Switch.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/console-images/Nintendo%20Switch.jpg"
   },
   {
     "id": 15,
@@ -192,7 +192,7 @@ const PRODUCTS_DATA = [
     "price": 34571,
     "compatibility": "Nintendo",
     "source_file": "consoles.xlsx",
-    "image": "images/console-images/Nintendo Switch OLED Model.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/console-images/Nintendo%20Switch%20OLED%20Model.jpg"
   },
   {
     "id": 16,
@@ -205,7 +205,7 @@ const PRODUCTS_DATA = [
     "price": 19549,
     "compatibility": "Nintendo",
     "source_file": "consoles.xlsx",
-    "image": "images/console-images/Nintendo Switch Lite.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/console-images/Nintendo%20Switch%20Lite.jpg"
   },
   {
     "id": 17,
@@ -218,7 +218,7 @@ const PRODUCTS_DATA = [
     "price": 50992,
     "compatibility": "Gaming",
     "source_file": "consoles.xlsx",
-    "image": "images/console-images/Steam Deck LCD 256GB.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/console-images/Steam%20Deck%20LCD%20256GB.jpg"
   },
   {
     "id": 18,
@@ -231,7 +231,7 @@ const PRODUCTS_DATA = [
     "price": 58092,
     "compatibility": "Gaming",
     "source_file": "consoles.xlsx",
-    "image": "images/console-images/Steam Deck OLED 512GB.png"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/console-images/Steam%20Deck%20OLED%20512GB.png"
   },
   {
     "id": 19,
@@ -244,7 +244,7 @@ const PRODUCTS_DATA = [
     "price": 85049,
     "compatibility": "Gaming",
     "source_file": "consoles.xlsx",
-    "image": "images/console-images/Steam Deck OLED 1TB.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/console-images/Steam%20Deck%20OLED%201TB.jpg"
   },
   {
     "id": 20,
@@ -257,7 +257,7 @@ const PRODUCTS_DATA = [
     "price": 53991,
     "compatibility": "Gaming",
     "source_file": "consoles.xlsx",
-    "image": "images/console-images/ROG Ally.png"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/console-images/ROG%20Ally.png"
   },
   {
     "id": 21,
@@ -270,7 +270,7 @@ const PRODUCTS_DATA = [
     "price": 95442,
     "compatibility": "Gaming",
     "source_file": "consoles.xlsx",
-    "image": "images/console-images/ROG Ally X.png"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/console-images/ROG%20Ally%20X.png"
   },
   {
     "id": 22,
@@ -283,7 +283,7 @@ const PRODUCTS_DATA = [
     "price": 103230,
     "compatibility": "Gaming",
     "source_file": "consoles.xlsx",
-    "image": "images/console-images/Legion Go.png"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/console-images/Legion%20Go.png"
   },
   {
     "id": 23,
@@ -296,7 +296,7 @@ const PRODUCTS_DATA = [
     "price": 88571,
     "compatibility": "Gaming",
     "source_file": "consoles.xlsx",
-    "image": "images/console-images/Legion Go S.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/console-images/Legion%20Go%20S.jpg"
   },
   {
     "id": 24,
@@ -309,7 +309,7 @@ const PRODUCTS_DATA = [
     "price": 82992,
     "compatibility": "Gaming",
     "source_file": "consoles.xlsx",
-    "image": "images/console-images/Claw.png"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/console-images/Claw.png"
   },
   {
     "id": 25,
@@ -322,7 +322,7 @@ const PRODUCTS_DATA = [
     "price": 134662,
     "compatibility": "Gaming",
     "source_file": "consoles.xlsx",
-    "image": "images/console-images/Claw 8 AI+.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/console-images/Claw%208%20AI%2B.webp"
   },
   {
     "id": 26,
@@ -335,7 +335,7 @@ const PRODUCTS_DATA = [
     "price": 20921,
     "compatibility": "Sony",
     "source_file": "consoles.xlsx",
-    "image": "images/console-images/PS4 Original Launch Edition.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/console-images/PS4%20Original%20Launch%20Edition.jpg"
   },
   {
     "id": 27,
@@ -348,7 +348,7 @@ const PRODUCTS_DATA = [
     "price": 11691,
     "compatibility": "Sony",
     "source_file": "consoles.xlsx",
-    "image": "images/console-images/PS3 Original Fat.png"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/console-images/PS3%20Original%20Fat.png"
   },
   {
     "id": 28,
@@ -361,7 +361,7 @@ const PRODUCTS_DATA = [
     "price": 13191,
     "compatibility": "Sony",
     "source_file": "consoles.xlsx",
-    "image": "images/console-images/PS3 Slim.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/console-images/PS3%20Slim.webp"
   },
   {
     "id": 29,
@@ -374,7 +374,7 @@ const PRODUCTS_DATA = [
     "price": 17591,
     "compatibility": "Sony",
     "source_file": "consoles.xlsx",
-    "image": "images/console-images/PS3 Super Slim.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/console-images/PS3%20Super%20Slim.jpg"
   },
   {
     "id": 30,
@@ -387,7 +387,7 @@ const PRODUCTS_DATA = [
     "price": 72892,
     "compatibility": "Sony",
     "source_file": "consoles.xlsx",
-    "image": "images/console-images/PS2 Original Fat.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/console-images/PS2%20Original%20Fat.jpg"
   },
   {
     "id": 31,
@@ -400,7 +400,7 @@ const PRODUCTS_DATA = [
     "price": 72892,
     "compatibility": "Sony",
     "source_file": "consoles.xlsx",
-    "image": "images/console-images/PS2 Slim.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/console-images/PS2%20Slim.jpg"
   },
   {
     "id": 32,
@@ -413,7 +413,7 @@ const PRODUCTS_DATA = [
     "price": 14231,
     "compatibility": "Microsoft",
     "source_file": "consoles.xlsx",
-    "image": "images/console-images/Xbox One Original.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/console-images/Xbox%20One%20Original.jpg"
   },
   {
     "id": 33,
@@ -426,7 +426,7 @@ const PRODUCTS_DATA = [
     "price": 82992,
     "compatibility": "Microsoft",
     "source_file": "consoles.xlsx",
-    "image": "images/console-images/Xbox 360 Original Fat.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/console-images/Xbox%20360%20Original%20Fat.jpg"
   },
   {
     "id": 34,
@@ -439,7 +439,7 @@ const PRODUCTS_DATA = [
     "price": 11951,
     "compatibility": "Microsoft",
     "source_file": "consoles.xlsx",
-    "image": "images/console-images/Xbox 360 S.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/console-images/Xbox%20360%20S.jpg"
   },
   {
     "id": 35,
@@ -452,7 +452,7 @@ const PRODUCTS_DATA = [
     "price": 74391,
     "compatibility": "Microsoft",
     "source_file": "consoles.xlsx",
-    "image": "images/console-images/Xbox 360 E.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/console-images/Xbox%20360%20E.jpg"
   },
   {
     "id": 36,
@@ -466,7 +466,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "CONTROLLERS",
-    "image": "images/accesories/Access Controller.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Access%20Controller.webp"
   },
   {
     "id": 37,
@@ -480,7 +480,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Sony",
     "source_file": "accessories.xlsx",
     "sheet_name": "CONTROLLERS",
-    "image": "images/accesories/DualSense Edge Wireless Controller.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/DualSense%20Edge%20Wireless%20Controller.webp"
   },
   {
     "id": 38,
@@ -494,7 +494,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Sony",
     "source_file": "accessories.xlsx",
     "sheet_name": "CONTROLLERS",
-    "image": "images/accesories/DualSense Wireless Controller White.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/DualSense%20Wireless%20Controller%20White.webp"
   },
   {
     "id": 39,
@@ -508,7 +508,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Sony",
     "source_file": "accessories.xlsx",
     "sheet_name": "CONTROLLERS",
-    "image": "images/accesories/DualSense Wireless Controller Midnight Black.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/DualSense%20Wireless%20Controller%20Midnight%20Black.webp"
   },
   {
     "id": 40,
@@ -522,7 +522,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Sony",
     "source_file": "accessories.xlsx",
     "sheet_name": "CONTROLLERS",
-    "image": "images/accesories/DualSense Wireless Controller Cosmic Red.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/DualSense%20Wireless%20Controller%20Cosmic%20Red.webp"
   },
   {
     "id": 41,
@@ -536,7 +536,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Sony",
     "source_file": "accessories.xlsx",
     "sheet_name": "CONTROLLERS",
-    "image": "images/accesories/DualSense Wireless Controller Nova Pink.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/DualSense%20Wireless%20Controller%20Nova%20Pink.webp"
   },
   {
     "id": 42,
@@ -550,7 +550,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Sony",
     "source_file": "accessories.xlsx",
     "sheet_name": "CONTROLLERS",
-    "image": "images/accesories/DualSense Wireless Controller Starlight Blue.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/DualSense%20Wireless%20Controller%20Starlight%20Blue.webp"
   },
   {
     "id": 43,
@@ -564,7 +564,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Sony",
     "source_file": "accessories.xlsx",
     "sheet_name": "CONTROLLERS",
-    "image": "images/accesories/DualSense Wireless Controller Galactic Purple.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/DualSense%20Wireless%20Controller%20Galactic%20Purple.webp"
   },
   {
     "id": 44,
@@ -578,7 +578,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Sony",
     "source_file": "accessories.xlsx",
     "sheet_name": "CONTROLLERS",
-    "image": "images/accesories/DualSense Wireless Controller Cobalt Blue.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/DualSense%20Wireless%20Controller%20Cobalt%20Blue.webp"
   },
   {
     "id": 45,
@@ -592,7 +592,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Sony",
     "source_file": "accessories.xlsx",
     "sheet_name": "CONTROLLERS",
-    "image": "images/accesories/DualSense Wireless Controller Volcanic Red.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/DualSense%20Wireless%20Controller%20Volcanic%20Red.webp"
   },
   {
     "id": 46,
@@ -606,7 +606,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Sony",
     "source_file": "accessories.xlsx",
     "sheet_name": "CONTROLLERS",
-    "image": "images/accesories/DualSense Wireless Controller Sterling Silver.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/DualSense%20Wireless%20Controller%20Sterling%20Silver.webp"
   },
   {
     "id": 47,
@@ -620,7 +620,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Sony",
     "source_file": "accessories.xlsx",
     "sheet_name": "CONTROLLERS",
-    "image": "images/accesories/DualSense Wireless Controller Chroma Pearl.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/DualSense%20Wireless%20Controller%20Chroma%20Pearl.webp"
   },
   {
     "id": 48,
@@ -634,7 +634,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Sony",
     "source_file": "accessories.xlsx",
     "sheet_name": "CONTROLLERS",
-    "image": "images/accesories/DualSense Wireless Controller Chroma Indigo.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/DualSense%20Wireless%20Controller%20Chroma%20Indigo.webp"
   },
   {
     "id": 49,
@@ -648,7 +648,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Sony",
     "source_file": "accessories.xlsx",
     "sheet_name": "CONTROLLERS",
-    "image": "images/accesories/DualSense Wireless Controller Chroma Teal.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/DualSense%20Wireless%20Controller%20Chroma%20Teal.webp"
   },
   {
     "id": 50,
@@ -662,7 +662,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "CONTROLLERS",
-    "image": "images/accesories/DUALSHOCK 4 Wireless Controller Jet Black.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/DUALSHOCK%204%20Wireless%20Controller%20Jet%20Black.webp"
   },
   {
     "id": 51,
@@ -676,7 +676,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "CONTROLLERS",
-    "image": "images/accesories/DUALSHOCK 4 Wireless Controller Glacier White.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/DUALSHOCK%204%20Wireless%20Controller%20Glacier%20White.webp"
   },
   {
     "id": 52,
@@ -690,7 +690,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "CONTROLLERS",
-    "image": "images/accesories/DUALSHOCK 4 Wireless Controller Wave Blue.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/DUALSHOCK%204%20Wireless%20Controller%20Wave%20Blue.webp"
   },
   {
     "id": 53,
@@ -704,7 +704,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "CONTROLLERS",
-    "image": "images/accesories/DUALSHOCK 4 Wireless Controller Magma Red.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/DUALSHOCK%204%20Wireless%20Controller%20Magma%20Red.webp"
   },
   {
     "id": 54,
@@ -718,7 +718,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "CONTROLLERS",
-    "image": "images/accesories/DUALSHOCK 4 Wireless Controller Urban Camouflage.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/DUALSHOCK%204%20Wireless%20Controller%20Urban%20Camouflage.webp"
   },
   {
     "id": 55,
@@ -732,7 +732,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "CONTROLLERS",
-    "image": "images/accesories/DUALSHOCK 4 Wireless Controller Midnight Blue.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/DUALSHOCK%204%20Wireless%20Controller%20Midnight%20Blue.webp"
   },
   {
     "id": 56,
@@ -746,7 +746,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "CONTROLLERS",
-    "image": "images/accesories/DUALSHOCK 4 Wireless Controller Copper.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/DUALSHOCK%204%20Wireless%20Controller%20Copper.webp"
   },
   {
     "id": 57,
@@ -760,7 +760,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "CONTROLLERS",
-    "image": "images/accesories/DUALSHOCK 4 Wireless Controller Berry Blue.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/DUALSHOCK%204%20Wireless%20Controller%20Berry%20Blue.webp"
   },
   {
     "id": 58,
@@ -774,7 +774,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "CONTROLLERS",
-    "image": "images/accesories/DUALSHOCK 4 Wireless Controller Alpine Green.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/DUALSHOCK%204%20Wireless%20Controller%20Alpine%20Green.webp"
   },
   {
     "id": 59,
@@ -788,7 +788,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "CONTROLLERS",
-    "image": "images/accesories/DUALSHOCK 4 Wireless Controller Electric Purple.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/DUALSHOCK%204%20Wireless%20Controller%20Electric%20Purple.webp"
   },
   {
     "id": 60,
@@ -802,7 +802,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "CONTROLLERS",
-    "image": "images/accesories/DUALSHOCK 4 Wireless Controller Red.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/DUALSHOCK%204%20Wireless%20Controller%20Red.webp"
   },
   {
     "id": 61,
@@ -816,7 +816,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "CONTROLLERS",
-    "image": "images/accesories/DUALSHOCK 4 Wireless Controller Blue.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/DUALSHOCK%204%20Wireless%20Controller%20Blue.webp"
   },
   {
     "id": 62,
@@ -830,7 +830,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "CONTROLLERS",
-    "image": "images/62_dualshock-3-wireless-controller.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/62_dualshock-3-wireless-controller.jpg"
   },
   {
     "id": 63,
@@ -844,7 +844,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Microsoft",
     "source_file": "accessories.xlsx",
     "sheet_name": "CONTROLLERS",
-    "image": "images/accesories/Xbox Elite Wireless Controller Series 2.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Xbox%20Elite%20Wireless%20Controller%20Series%202.jpg"
   },
   {
     "id": 64,
@@ -858,7 +858,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Microsoft",
     "source_file": "accessories.xlsx",
     "sheet_name": "CONTROLLERS",
-    "image": "images/accesories/Xbox Elite Wireless Controller Series 2 - Core.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Xbox%20Elite%20Wireless%20Controller%20Series%202%20-%20Core.jpg"
   },
   {
     "id": 65,
@@ -872,7 +872,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Microsoft",
     "source_file": "accessories.xlsx",
     "sheet_name": "CONTROLLERS",
-    "image": "images/accesories/Xbox Adaptive Controller.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Xbox%20Adaptive%20Controller.jpg"
   },
   {
     "id": 66,
@@ -886,7 +886,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Microsoft",
     "source_file": "accessories.xlsx",
     "sheet_name": "CONTROLLERS",
-    "image": "images/accesories/Xbox Wireless Controller Carbon Black.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Xbox%20Wireless%20Controller%20Carbon%20Black.jpg"
   },
   {
     "id": 67,
@@ -900,7 +900,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Microsoft",
     "source_file": "accessories.xlsx",
     "sheet_name": "CONTROLLERS",
-    "image": "images/accesories/Xbox Wireless Controller Robot White.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Xbox%20Wireless%20Controller%20Robot%20White.jpg"
   },
   {
     "id": 68,
@@ -914,7 +914,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Microsoft",
     "source_file": "accessories.xlsx",
     "sheet_name": "CONTROLLERS",
-    "image": "images/accesories/Xbox Wireless Controller Shock Blue.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Xbox%20Wireless%20Controller%20Shock%20Blue.jpg"
   },
   {
     "id": 69,
@@ -928,7 +928,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Microsoft",
     "source_file": "accessories.xlsx",
     "sheet_name": "CONTROLLERS",
-    "image": "images/accesories/Xbox Wireless Controller Pulse Red.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Xbox%20Wireless%20Controller%20Pulse%20Red.jpg"
   },
   {
     "id": 70,
@@ -942,7 +942,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Microsoft",
     "source_file": "accessories.xlsx",
     "sheet_name": "CONTROLLERS",
-    "image": "images/accesories/Xbox Wireless Controller Electric Volt.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Xbox%20Wireless%20Controller%20Electric%20Volt.jpg"
   },
   {
     "id": 71,
@@ -956,7 +956,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Microsoft",
     "source_file": "accessories.xlsx",
     "sheet_name": "CONTROLLERS",
-    "image": "images/accesories/Xbox Wireless Controller Deep Pink.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Xbox%20Wireless%20Controller%20Deep%20Pink.jpg"
   },
   {
     "id": 72,
@@ -970,7 +970,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Microsoft",
     "source_file": "accessories.xlsx",
     "sheet_name": "CONTROLLERS",
-    "image": "images/accesories/Xbox Wireless Controller Velocity Green.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Xbox%20Wireless%20Controller%20Velocity%20Green.jpg"
   },
   {
     "id": 73,
@@ -984,7 +984,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Microsoft",
     "source_file": "accessories.xlsx",
     "sheet_name": "CONTROLLERS",
-    "image": "images/accesories/Xbox Wireless Controller Aqua Shift.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Xbox%20Wireless%20Controller%20Aqua%20Shift.jpg"
   },
   {
     "id": 74,
@@ -998,7 +998,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Microsoft",
     "source_file": "accessories.xlsx",
     "sheet_name": "CONTROLLERS",
-    "image": "images/accesories/Xbox Wireless Controller Lunar Shift.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Xbox%20Wireless%20Controller%20Lunar%20Shift.jpg"
   },
   {
     "id": 75,
@@ -1012,7 +1012,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Microsoft",
     "source_file": "accessories.xlsx",
     "sheet_name": "CONTROLLERS",
-    "image": "images/accesories/Xbox Wireless Controller Stellar Shift.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Xbox%20Wireless%20Controller%20Stellar%20Shift.jpg"
   },
   {
     "id": 76,
@@ -1026,7 +1026,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Microsoft",
     "source_file": "accessories.xlsx",
     "sheet_name": "CONTROLLERS",
-    "image": "images/accesories/Xbox Wireless Controller Mineral Camo.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Xbox%20Wireless%20Controller%20Mineral%20Camo.jpg"
   },
   {
     "id": 77,
@@ -1040,7 +1040,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Microsoft",
     "source_file": "accessories.xlsx",
     "sheet_name": "CONTROLLERS",
-    "image": "images/accesories/Xbox Wireless Controller Artic Camo.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Xbox%20Wireless%20Controller%20Artic%20Camo.jpg"
   },
   {
     "id": 78,
@@ -1054,7 +1054,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Microsoft",
     "source_file": "accessories.xlsx",
     "sheet_name": "CONTROLLERS",
-    "image": "images/accesories/Xbox Wireless Controller Astral Purple.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Xbox%20Wireless%20Controller%20Astral%20Purple.jpg"
   },
   {
     "id": 79,
@@ -1068,7 +1068,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Microsoft",
     "source_file": "accessories.xlsx",
     "sheet_name": "CONTROLLERS",
-    "image": "images/accesories/Xbox Wireless Controller Sunkissed Vibes.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Xbox%20Wireless%20Controller%20Sunkissed%20Vibes.jpg"
   },
   {
     "id": 80,
@@ -1082,7 +1082,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Microsoft",
     "source_file": "accessories.xlsx",
     "sheet_name": "CONTROLLERS",
-    "image": "images/accesories/Xbox Wireless Controller Dream Vapor.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Xbox%20Wireless%20Controller%20Dream%20Vapor.jpg"
   },
   {
     "id": 81,
@@ -1096,7 +1096,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Microsoft",
     "source_file": "accessories.xlsx",
     "sheet_name": "CONTROLLERS",
-    "image": "images/accesories/Xbox Wireless Controller Fire Vapor.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Xbox%20Wireless%20Controller%20Fire%20Vapor.jpg"
   },
   {
     "id": 82,
@@ -1110,7 +1110,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Microsoft",
     "source_file": "accessories.xlsx",
     "sheet_name": "CONTROLLERS",
-    "image": "images/accesories/Xbox Wireless Controller Ghost Cipher.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Xbox%20Wireless%20Controller%20Ghost%20Cipher.jpg"
   },
   {
     "id": 83,
@@ -1124,7 +1124,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Microsoft",
     "source_file": "accessories.xlsx",
     "sheet_name": "CONTROLLERS",
-    "image": "images/accesories/Xbox Wireless Controller Sky Cipher.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Xbox%20Wireless%20Controller%20Sky%20Cipher.jpg"
   },
   {
     "id": 84,
@@ -1138,7 +1138,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Microsoft",
     "source_file": "accessories.xlsx",
     "sheet_name": "CONTROLLERS",
-    "image": "images/84_xbox-one-wireless-controller.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/84_xbox-one-wireless-controller.jpg"
   },
   {
     "id": 85,
@@ -1152,7 +1152,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Microsoft",
     "source_file": "accessories.xlsx",
     "sheet_name": "CONTROLLERS",
-    "image": "images/accesories/Xbox Elite Wireless Controller.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Xbox%20Elite%20Wireless%20Controller.jpg"
   },
   {
     "id": 86,
@@ -1166,7 +1166,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Microsoft",
     "source_file": "accessories.xlsx",
     "sheet_name": "CONTROLLERS",
-    "image": "images/86_xbox-360-wireless-controller.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/86_xbox-360-wireless-controller.jpg"
   },
   {
     "id": 87,
@@ -1180,7 +1180,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Microsoft",
     "source_file": "accessories.xlsx",
     "sheet_name": "CONTROLLERS",
-    "image": "images/87_xbox-360-wired-controller.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/87_xbox-360-wired-controller.jpg"
   },
   {
     "id": 88,
@@ -1194,7 +1194,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Sony",
     "source_file": "accessories.xlsx",
     "sheet_name": "CHARGING",
-    "image": "images/accesories/PS5 DualSense Charging Station.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/PS5%20DualSense%20Charging%20Station.webp"
   },
   {
     "id": 89,
@@ -1208,7 +1208,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Sony",
     "source_file": "accessories.xlsx",
     "sheet_name": "CHARGING",
-    "image": "images/accesories/PS5 DualSense Dual Charging Dock.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/PS5%20DualSense%20Dual%20Charging%20Dock.webp"
   },
   {
     "id": 90,
@@ -1222,7 +1222,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Sony",
     "source_file": "accessories.xlsx",
     "sheet_name": "CHARGING",
-    "image": "images/accesories/DualSense Edge Charging Dock.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/DualSense%20Edge%20Charging%20Dock.webp"
   },
   {
     "id": 91,
@@ -1236,7 +1236,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Sony",
     "source_file": "accessories.xlsx",
     "sheet_name": "CHARGING",
-    "image": "images/accesories/PS4 DualShock 4 Charging Dock.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/PS4%20DualShock%204%20Charging%20Dock.webp"
   },
   {
     "id": 92,
@@ -1250,7 +1250,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Sony",
     "source_file": "accessories.xlsx",
     "sheet_name": "CHARGING",
-    "image": "images/92_ps3-controller-charging-dock.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/92_ps3-controller-charging-dock.jpg"
   },
   {
     "id": 93,
@@ -1264,7 +1264,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Microsoft",
     "source_file": "accessories.xlsx",
     "sheet_name": "CHARGING",
-    "image": "images/accesories/Xbox Wireless Controller Charging Dock.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Xbox%20Wireless%20Controller%20Charging%20Dock.jpg"
   },
   {
     "id": 94,
@@ -1278,7 +1278,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Microsoft",
     "source_file": "accessories.xlsx",
     "sheet_name": "CHARGING",
-    "image": "images/accesories/Xbox Elite Controller Charging Dock.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Xbox%20Elite%20Controller%20Charging%20Dock.jpg"
   },
   {
     "id": 95,
@@ -1292,7 +1292,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Microsoft",
     "source_file": "accessories.xlsx",
     "sheet_name": "CHARGING",
-    "image": "images/95_xbox-360-controller-charging-dock.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/95_xbox-360-controller-charging-dock.jpg"
   },
   {
     "id": 96,
@@ -1306,7 +1306,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Sony",
     "source_file": "accessories.xlsx",
     "sheet_name": "AUDIO",
-    "image": "images/accesories/PS5 PULSE Elite Wireless Headset.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/PS5%20PULSE%20Elite%20Wireless%20Headset.webp"
   },
   {
     "id": 97,
@@ -1320,7 +1320,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Sony",
     "source_file": "accessories.xlsx",
     "sheet_name": "AUDIO",
-    "image": "images/accesories/PS5 PULSE Explore Wireless Earbuds.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/PS5%20PULSE%20Explore%20Wireless%20Earbuds.webp"
   },
   {
     "id": 98,
@@ -1334,7 +1334,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Sony",
     "source_file": "accessories.xlsx",
     "sheet_name": "AUDIO",
-    "image": "images/accesories/PS5 PULSE 3D Wireless Headset.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/PS5%20PULSE%203D%20Wireless%20Headset.webp"
   },
   {
     "id": 99,
@@ -1348,7 +1348,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Sony",
     "source_file": "accessories.xlsx",
     "sheet_name": "AUDIO",
-    "image": "images/99_ps4-platinum-wireless-headset.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/99_ps4-platinum-wireless-headset.jpg"
   },
   {
     "id": 100,
@@ -1362,7 +1362,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Sony",
     "source_file": "accessories.xlsx",
     "sheet_name": "AUDIO",
-    "image": "images/accesories/PS4 Gold Wireless Headset.png"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/PS4%20Gold%20Wireless%20Headset.png"
   },
   {
     "id": 101,
@@ -1376,7 +1376,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Sony",
     "source_file": "accessories.xlsx",
     "sheet_name": "AUDIO",
-    "image": "images/accesories/PS4 Gold Wireless Stereo Headset.png"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/PS4%20Gold%20Wireless%20Stereo%20Headset.png"
   },
   {
     "id": 102,
@@ -1390,7 +1390,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Microsoft",
     "source_file": "accessories.xlsx",
     "sheet_name": "AUDIO",
-    "image": "images/accesories/Xbox Wireless Headset.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Xbox%20Wireless%20Headset.jpg"
   },
   {
     "id": 103,
@@ -1404,7 +1404,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Microsoft",
     "source_file": "accessories.xlsx",
     "sheet_name": "AUDIO",
-    "image": "images/accesories/Xbox Stereo Headset.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Xbox%20Stereo%20Headset.jpg"
   },
   {
     "id": 104,
@@ -1418,7 +1418,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Microsoft",
     "source_file": "accessories.xlsx",
     "sheet_name": "AUDIO",
-    "image": "images/accesories/Xbox Wireless Headset.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Xbox%20Wireless%20Headset.jpg"
   },
   {
     "id": 105,
@@ -1432,7 +1432,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "STORAGE",
-    "image": "images/accesories/8TB WD BLACK Internal SN850P NVMe SSD Game Drive.png"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/8TB%20WD%20BLACK%20Internal%20SN850P%20NVMe%20SSD%20Game%20Drive.png"
   },
   {
     "id": 106,
@@ -1446,7 +1446,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "STORAGE",
-    "image": "images/accesories/4TB WD BLACK Internal SN850P NVMe SSD Game Drive.png"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/4TB%20WD%20BLACK%20Internal%20SN850P%20NVMe%20SSD%20Game%20Drive.png"
   },
   {
     "id": 107,
@@ -1460,7 +1460,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "STORAGE",
-    "image": "images/accesories/2TB WD BLACK Internal SN850P NVMe SSD Game Drive.png"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/2TB%20WD%20BLACK%20Internal%20SN850P%20NVMe%20SSD%20Game%20Drive.png"
   },
   {
     "id": 108,
@@ -1474,7 +1474,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "STORAGE",
-    "image": "images/accesories/1TB WD BLACK Internal SN850P NVMe SSD Game Drive.png"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/1TB%20WD%20BLACK%20Internal%20SN850P%20NVMe%20SSD%20Game%20Drive.png"
   },
   {
     "id": 109,
@@ -1488,7 +1488,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Sony",
     "source_file": "accessories.xlsx",
     "sheet_name": "STORAGE",
-    "image": "images/accesories/8TB SanDisk Optimus GX PRO 850P NVMe SSD for PS5 consoles.png"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/8TB%20SanDisk%20Optimus%20GX%20PRO%20850P%20NVMe%20SSD%20for%20PS5%20consoles.png"
   },
   {
     "id": 110,
@@ -1502,7 +1502,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Sony",
     "source_file": "accessories.xlsx",
     "sheet_name": "STORAGE",
-    "image": "images/accesories/4TB SanDisk Optimus GX PRO 850P NVMe SSD for PS5 consoles.png"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/4TB%20SanDisk%20Optimus%20GX%20PRO%20850P%20NVMe%20SSD%20for%20PS5%20consoles.png"
   },
   {
     "id": 111,
@@ -1516,7 +1516,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Sony",
     "source_file": "accessories.xlsx",
     "sheet_name": "STORAGE",
-    "image": "images/accesories/2TB SanDisk Optimus GX PRO 850P NVMe SSD for PS5 consoles.png"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/2TB%20SanDisk%20Optimus%20GX%20PRO%20850P%20NVMe%20SSD%20for%20PS5%20consoles.png"
   },
   {
     "id": 112,
@@ -1530,7 +1530,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Sony",
     "source_file": "accessories.xlsx",
     "sheet_name": "STORAGE",
-    "image": "images/accesories/1TB SanDisk Optimus GX PRO 850P NVMe SSD for PS5 consoles.png"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/1TB%20SanDisk%20Optimus%20GX%20PRO%20850P%20NVMe%20SSD%20for%20PS5%20consoles.png"
   },
   {
     "id": 113,
@@ -1544,7 +1544,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "VR & AR",
-    "image": "images/accesories/PlayStation VR2.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/PlayStation%20VR2.webp"
   },
   {
     "id": 114,
@@ -1558,7 +1558,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "VR & AR",
-    "image": "images/accesories/PlayStation VR2 Sense Controller - Left.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/PlayStation%20VR2%20Sense%20Controller%20-%20Left.webp"
   },
   {
     "id": 115,
@@ -1572,7 +1572,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "VR & AR",
-    "image": "images/accesories/PlayStation VR2 Sense Controller - Right.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/PlayStation%20VR2%20Sense%20Controller%20-%20Right.webp"
   },
   {
     "id": 116,
@@ -1586,7 +1586,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "VR & AR",
-    "image": "images/accesories/PlayStation VR2 Sense Controller Charging Station.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/PlayStation%20VR2%20Sense%20Controller%20Charging%20Station.webp"
   },
   {
     "id": 117,
@@ -1600,7 +1600,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "VR & AR",
-    "image": "images/accesories/PlayStation VR2 PC Adapter.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/PlayStation%20VR2%20PC%20Adapter.webp"
   },
   {
     "id": 118,
@@ -1614,7 +1614,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Sony",
     "source_file": "accessories.xlsx",
     "sheet_name": "VR & AR",
-    "image": "images/accesories/PS VR2 Sense Controller Charging Station.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/PS%20VR2%20Sense%20Controller%20Charging%20Station.webp"
   },
   {
     "id": 119,
@@ -1628,7 +1628,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Sony",
     "source_file": "accessories.xlsx",
     "sheet_name": "VR & AR",
-    "image": "images/accesories/PS VR2 Stereo Headphones.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/PS%20VR2%20Stereo%20Headphones.webp"
   },
   {
     "id": 120,
@@ -1642,7 +1642,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Sony",
     "source_file": "accessories.xlsx",
     "sheet_name": "VR & AR",
-    "image": "images/accesories/PS VR2 official earpieces.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/PS%20VR2%20official%20earpieces.webp"
   },
   {
     "id": 121,
@@ -1656,7 +1656,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "VR & AR",
-    "image": "images/accesories/PlayStation VR Headset.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/PlayStation%20VR%20Headset.webp"
   },
   {
     "id": 122,
@@ -1670,7 +1670,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "VR & AR",
-    "image": "images/accesories/PlayStation Camera.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/PlayStation%20Camera.webp"
   },
   {
     "id": 123,
@@ -1684,7 +1684,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "VR & AR",
-    "image": "images/accesories/PlayStation Move Motion Controller.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/PlayStation%20Move%20Motion%20Controller.webp"
   },
   {
     "id": 124,
@@ -1698,7 +1698,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "VR & AR",
-    "image": "images/accesories/PlayStation VR Aim Controller.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/PlayStation%20VR%20Aim%20Controller.webp"
   },
   {
     "id": 125,
@@ -1712,7 +1712,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "VR & AR",
-    "image": "images/accesories/PlayStation VR Processor Unit.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/PlayStation%20VR%20Processor%20Unit.webp"
   },
   {
     "id": 126,
@@ -1726,7 +1726,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "RACING",
-    "image": "images/accesories/Logitech G29 Driving Force Racing Wheel.png"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Logitech%20G29%20Driving%20Force%20Racing%20Wheel.png"
   },
   {
     "id": 127,
@@ -1740,7 +1740,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "RACING",
-    "image": "images/accesories/Logitech G920 Driving Force Racing Wheel.png"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Logitech%20G920%20Driving%20Force%20Racing%20Wheel.png"
   },
   {
     "id": 128,
@@ -1754,7 +1754,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "RACING",
-    "image": "images/accesories/Logitech G923 TRUEFORCE Racing Wheel.png"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Logitech%20G923%20TRUEFORCE%20Racing%20Wheel.png"
   },
   {
     "id": 129,
@@ -1768,7 +1768,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "RACING",
-    "image": "images/accesories/Logitech G PRO Racing Wheel.png"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Logitech%20G%20PRO%20Racing%20Wheel.png"
   },
   {
     "id": 130,
@@ -1782,7 +1782,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "RACING",
-    "image": "images/accesories/Logitech G PRO Racing Wheel.png"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Logitech%20G%20PRO%20Racing%20Wheel.png"
   },
   {
     "id": 131,
@@ -1796,7 +1796,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "RACING",
-    "image": "images/accesories/Logitech G RS50 System.png"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Logitech%20G%20RS50%20System.png"
   },
   {
     "id": 132,
@@ -1810,7 +1810,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "RACING",
-    "image": "images/accesories/Logitech G RS50 Base.png"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Logitech%20G%20RS50%20Base.png"
   },
   {
     "id": 133,
@@ -1824,7 +1824,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "RACING",
-    "image": "images/accesories/Logitech G PRO Racing Pedals.png"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Logitech%20G%20PRO%20Racing%20Pedals.png"
   },
   {
     "id": 134,
@@ -1838,7 +1838,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "RACING",
-    "image": "images/accesories/Logitech G RS Pedals.png"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Logitech%20G%20RS%20Pedals.png"
   },
   {
     "id": 135,
@@ -1852,7 +1852,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "RACING",
-    "image": "images/accesories/Logitech G923 Pedals.png"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Logitech%20G923%20Pedals.png"
   },
   {
     "id": 136,
@@ -1866,7 +1866,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "RACING",
-    "image": "images/accesories/Logitech G29G920 Driving Force Pedals.png"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Logitech%20G29G920%20Driving%20Force%20Pedals.png"
   },
   {
     "id": 137,
@@ -1880,7 +1880,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "RACING",
-    "image": "images/accesories/Logitech G Driving Force Shifter.png"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Logitech%20G%20Driving%20Force%20Shifter.png"
   },
   {
     "id": 138,
@@ -1894,7 +1894,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "RACING",
-    "image": "images/accesories/Logitech G RS Wheel Hub.png"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Logitech%20G%20RS%20Wheel%20Hub.png"
   },
   {
     "id": 139,
@@ -1908,7 +1908,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "RACING",
-    "image": "images/accesories/Logitech G RS Formula Wheel McLaren Racing Edition.png"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Logitech%20G%20RS%20Formula%20Wheel%20McLaren%20Racing%20Edition.png"
   },
   {
     "id": 140,
@@ -1922,7 +1922,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "RACING",
-    "image": "images/accesories/Logitech G RS Clutch Module.png"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Logitech%20G%20RS%20Clutch%20Module.png"
   },
   {
     "id": 141,
@@ -1936,7 +1936,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "RACING",
-    "image": "images/accesories/Logitech G RS50 Table Clamp.png"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Logitech%20G%20RS50%20Table%20Clamp.png"
   },
   {
     "id": 142,
@@ -1950,7 +1950,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "RACING",
-    "image": "images/accesories/Thrustmaster T128.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Thrustmaster%20T128.webp"
   },
   {
     "id": 143,
@@ -1964,7 +1964,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "RACING",
-    "image": "images/accesories/Thrustmaster T128 Shifter Pack.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Thrustmaster%20T128%20Shifter%20Pack.jpg"
   },
   {
     "id": 144,
@@ -1978,7 +1978,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "RACING",
-    "image": "images/accesories/Thrustmaster T248.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Thrustmaster%20T248.webp"
   },
   {
     "id": 145,
@@ -1992,7 +1992,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "RACING",
-    "image": "images/accesories/Thrustmaster T248R.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Thrustmaster%20T248R.webp"
   },
   {
     "id": 146,
@@ -2006,7 +2006,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "RACING",
-    "image": "images/accesories/Thrustmaster T150 Force Feedback.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Thrustmaster%20T150%20Force%20Feedback.webp"
   },
   {
     "id": 147,
@@ -2020,7 +2020,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "RACING",
-    "image": "images/accesories/Thrustmaster T150 PRO Force Feedback.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Thrustmaster%20T150%20PRO%20Force%20Feedback.jpg"
   },
   {
     "id": 148,
@@ -2034,7 +2034,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "RACING",
-    "image": "images/accesories/Thrustmaster T150 Ferrari Wheel Force Feedback.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Thrustmaster%20T150%20Ferrari%20Wheel%20Force%20Feedback.jpg"
   },
   {
     "id": 149,
@@ -2048,7 +2048,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "RACING",
-    "image": "images/accesories/Thrustmaster TMX Force Feedback.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Thrustmaster%20TMX%20Force%20Feedback.webp"
   },
   {
     "id": 150,
@@ -2062,7 +2062,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "RACING",
-    "image": "images/accesories/Thrustmaster TMX PRO Force Feedback.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Thrustmaster%20TMX%20PRO%20Force%20Feedback.webp"
   },
   {
     "id": 151,
@@ -2076,7 +2076,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "RACING",
-    "image": "images/accesories/Thrustmaster T-GT.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Thrustmaster%20T-GT.jpg"
   },
   {
     "id": 152,
@@ -2090,7 +2090,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "RACING",
-    "image": "images/accesories/Thrustmaster T-GT II.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Thrustmaster%20T-GT%20II.webp"
   },
   {
     "id": 153,
@@ -2104,7 +2104,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "RACING",
-    "image": "images/accesories/Thrustmaster T598.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Thrustmaster%20T598.webp"
   },
   {
     "id": 154,
@@ -2118,7 +2118,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "RACING",
-    "image": "images/accesories/Thrustmaster T2PM.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Thrustmaster%20T2PM.jpg"
   },
   {
     "id": 155,
@@ -2132,7 +2132,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "RACING",
-    "image": "images/accesories/Thrustmaster T3PM.png"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Thrustmaster%20T3PM.png"
   },
   {
     "id": 156,
@@ -2146,7 +2146,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "RACING",
-    "image": "images/accesories/Thrustmaster T3PA.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Thrustmaster%20T3PA.webp"
   },
   {
     "id": 157,
@@ -2160,7 +2160,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "RACING",
-    "image": "images/accesories/Thrustmaster T3PA-PRO.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Thrustmaster%20T3PA-PRO.jpg"
   },
   {
     "id": 158,
@@ -2174,7 +2174,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "RACING",
-    "image": "images/accesories/Thrustmaster T-LCM Pedals.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Thrustmaster%20T-LCM%20Pedals.webp"
   },
   {
     "id": 159,
@@ -2188,7 +2188,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "RACING",
-    "image": "images/accesories/Thrustmaster Raceline Pedals III.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Thrustmaster%20Raceline%20Pedals%20III.webp"
   },
   {
     "id": 160,
@@ -2202,7 +2202,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "RACING",
-    "image": "images/accesories/Thrustmaster TH8A Shifter.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Thrustmaster%20TH8A%20Shifter.webp"
   },
   {
     "id": 161,
@@ -2216,7 +2216,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "RACING",
-    "image": "images/accesories/Thrustmaster TSS Handbrake Sparco Mod+.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Thrustmaster%20TSS%20Handbrake%20Sparco%20Mod%2B.webp"
   },
   {
     "id": 162,
@@ -2230,7 +2230,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "RACING",
-    "image": "images/accesories/Thrustmaster Ferrari 488 GT3 Wheel Add-On.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Thrustmaster%20Ferrari%20488%20GT3%20Wheel%20Add-On.webp"
   },
   {
     "id": 163,
@@ -2244,7 +2244,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "RACING",
-    "image": "images/accesories/Thrustmaster Ferrari 599XX EVO 30 Wheel Add-On.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Thrustmaster%20Ferrari%20599XX%20EVO%2030%20Wheel%20Add-On.webp"
   },
   {
     "id": 164,
@@ -2258,7 +2258,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "RACING",
-    "image": "images/accesories/Thrustmaster Open Wheel Add-On.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Thrustmaster%20Open%20Wheel%20Add-On.webp"
   },
   {
     "id": 165,
@@ -2272,7 +2272,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "RACING",
-    "image": "images/accesories/Thrustmaster Sparco R383 Mod.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Thrustmaster%20Sparco%20R383%20Mod.webp"
   },
   {
     "id": 166,
@@ -2286,7 +2286,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "RACING",
-    "image": "images/accesories/Thrustmaster Ferrari F1 Wheel Add-On.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Thrustmaster%20Ferrari%20F1%20Wheel%20Add-On.webp"
   },
   {
     "id": 167,
@@ -2300,7 +2300,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "ARCADE & FIGHTING",
-    "image": "images/accesories/Sony FlexStrike Wireless Fight Stick.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Sony%20FlexStrike%20Wireless%20Fight%20Stick.webp"
   },
   {
     "id": 168,
@@ -2314,7 +2314,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "ARCADE & FIGHTING",
-    "image": "images/accesories/Victrix Pro FS Arcade Fight Stick.png"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Victrix%20Pro%20FS%20Arcade%20Fight%20Stick.png"
   },
   {
     "id": 169,
@@ -2328,7 +2328,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "ARCADE & FIGHTING",
-    "image": "images/accesories/Victrix Pro FS-12 Arcade Fight Stick.png"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Victrix%20Pro%20FS-12%20Arcade%20Fight%20Stick.png"
   },
   {
     "id": 170,
@@ -2342,7 +2342,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "ARCADE & FIGHTING",
-    "image": "images/accesories/Razer Kitsune Arcade Controller.png"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Razer%20Kitsune%20Arcade%20Controller.png"
   },
   {
     "id": 171,
@@ -2356,7 +2356,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "ARCADE & FIGHTING",
-    "image": "images/accesories/NACON Daija Arcade Stick.webp"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/NACON%20Daija%20Arcade%20Stick.webp"
   },
   {
     "id": 172,
@@ -2370,7 +2370,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "ARCADE & FIGHTING",
-    "image": "images/accesories/HORI Fighting Stick Alpha.png"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/HORI%20Fighting%20Stick%20Alpha.png"
   },
   {
     "id": 173,
@@ -2384,7 +2384,7 @@ const PRODUCTS_DATA = [
     "compatibility": "Multi-Platform",
     "source_file": "accessories.xlsx",
     "sheet_name": "ARCADE & FIGHTING",
-    "image": "images/accesories/Qanba Titan Arcade Joystick.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/accesories/Qanba%20Titan%20Arcade%20Joystick.jpg"
   },
   {
     "id": 174,
@@ -2398,7 +2398,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Astro Bot.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Astro%20Bot.jpg"
   },
   {
     "id": 175,
@@ -2412,7 +2412,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Marvel's Spider-Man 2.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Marvel%27s%20Spider-Man%202.jpg"
   },
   {
     "id": 176,
@@ -2426,7 +2426,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Marvel's Spider-Man Miles Morales.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Marvel%27s%20Spider-Man%20Miles%20Morales.jpg"
   },
   {
     "id": 177,
@@ -2440,7 +2440,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/God of War Ragnar\u00f6k.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/God%20of%20War%20Ragnar%C3%B6k.jpg"
   },
   {
     "id": 178,
@@ -2454,7 +2454,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Horizon Forbidden West.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Horizon%20Forbidden%20West.jpg"
   },
   {
     "id": 179,
@@ -2468,7 +2468,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Demon's Souls.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Demon%27s%20Souls.jpg"
   },
   {
     "id": 180,
@@ -2482,7 +2482,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Ratchet & Clank Rift Apart.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Ratchet%20%26%20Clank%20Rift%20Apart.jpg"
   },
   {
     "id": 181,
@@ -2496,7 +2496,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Gran Turismo 7.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Gran%20Turismo%207.jpg"
   },
   {
     "id": 182,
@@ -2510,7 +2510,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Returnal.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Returnal.jpg"
   },
   {
     "id": 183,
@@ -2524,7 +2524,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/The Last of Us Part I.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/The%20Last%20of%20Us%20Part%20I.jpg"
   },
   {
     "id": 184,
@@ -2538,7 +2538,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/The Last of Us Part II Remastered.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/The%20Last%20of%20Us%20Part%20II%20Remastered.jpg"
   },
   {
     "id": 185,
@@ -2552,7 +2552,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Sackboy A Big Adventure.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Sackboy%20A%20Big%20Adventure.jpg"
   },
   {
     "id": 186,
@@ -2566,7 +2566,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Ghost of Tsushima Director's Cut.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Ghost%20of%20Tsushima%20Director%27s%20Cut.jpg"
   },
   {
     "id": 187,
@@ -2580,7 +2580,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Death Stranding Director's Cut.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Death%20Stranding%20Director%27s%20Cut.jpg"
   },
   {
     "id": 188,
@@ -2594,7 +2594,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/188_helldivers-2.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/188_helldivers-2.jpg"
   },
   {
     "id": 189,
@@ -2608,7 +2608,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Concord.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Concord.jpg"
   },
   {
     "id": 190,
@@ -2622,7 +2622,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/190_until-dawn.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/190_until-dawn.jpg"
   },
   {
     "id": 191,
@@ -2636,7 +2636,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/191_stellar-blade.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/191_stellar-blade.jpg"
   },
   {
     "id": 192,
@@ -2650,7 +2650,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Rise of the Ronin.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Rise%20of%20the%20Ronin.jpg"
   },
   {
     "id": 193,
@@ -2664,7 +2664,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Concord.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Concord.jpg"
   },
   {
     "id": 194,
@@ -2678,7 +2678,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Grand Theft Auto V.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Grand%20Theft%20Auto%20V.jpg"
   },
   {
     "id": 195,
@@ -2692,7 +2692,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Red Dead Redemption.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Red%20Dead%20Redemption.jpg"
   },
   {
     "id": 196,
@@ -2706,7 +2706,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Red Dead Redemption.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Red%20Dead%20Redemption.jpg"
   },
   {
     "id": 197,
@@ -2720,7 +2720,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/197_nba-2k26.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/197_nba-2k26.jpg"
   },
   {
     "id": 198,
@@ -2734,7 +2734,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/198_wwe-2k26.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/198_wwe-2k26.jpg"
   },
   {
     "id": 199,
@@ -2748,7 +2748,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Borderlands 4.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Borderlands%204.jpg"
   },
   {
     "id": 200,
@@ -2762,7 +2762,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/200_mafia-the-old-country.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/200_mafia-the-old-country.jpg"
   },
   {
     "id": 201,
@@ -2776,7 +2776,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/201_ea-sports-fc-26.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/201_ea-sports-fc-26.jpg"
   },
   {
     "id": 202,
@@ -2790,7 +2790,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/EA SPORTS FC 25.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/EA%20SPORTS%20FC%2025.jpg"
   },
   {
     "id": 203,
@@ -2804,7 +2804,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/203_ea-sports-madden-nfl-26.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/203_ea-sports-madden-nfl-26.jpg"
   },
   {
     "id": 204,
@@ -2818,7 +2818,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/204_f1-25.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/204_f1-25.jpg"
   },
   {
     "id": 205,
@@ -2832,7 +2832,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/F1 24.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/F1%2024.jpg"
   },
   {
     "id": 206,
@@ -2846,7 +2846,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/EA SPORTS UFC 5.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/EA%20SPORTS%20UFC%205.jpg"
   },
   {
     "id": 207,
@@ -2860,7 +2860,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Need for Speed Unbound.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Need%20for%20Speed%20Unbound.jpg"
   },
   {
     "id": 208,
@@ -2874,7 +2874,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Star Wars Jedi Survivor.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Star%20Wars%20Jedi%20Survivor.jpg"
   },
   {
     "id": 209,
@@ -2888,7 +2888,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Star Wars Jedi Fallen Order.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Star%20Wars%20Jedi%20Fallen%20Order.jpg"
   },
   {
     "id": 210,
@@ -2902,7 +2902,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Dead Space.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Dead%20Space.jpg"
   },
   {
     "id": 211,
@@ -2916,7 +2916,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/211_dragon-age-the-veilguard.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/211_dragon-age-the-veilguard.jpg"
   },
   {
     "id": 212,
@@ -2930,7 +2930,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Assassin's Creed Shadows.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Assassin%27s%20Creed%20Shadows.jpg"
   },
   {
     "id": 213,
@@ -2944,7 +2944,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Assassin's Creed Mirage.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Assassin%27s%20Creed%20Mirage.jpg"
   },
   {
     "id": 214,
@@ -2958,7 +2958,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Assassin's Creed Valhalla.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Assassin%27s%20Creed%20Valhalla.jpg"
   },
   {
     "id": 215,
@@ -2972,7 +2972,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/215_assassin-s-creed-odyssey.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/215_assassin-s-creed-odyssey.jpg"
   },
   {
     "id": 216,
@@ -2986,7 +2986,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/216_assassin-s-creed-origins.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/216_assassin-s-creed-origins.jpg"
   },
   {
     "id": 217,
@@ -3000,7 +3000,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Far Cry 6.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Far%20Cry%206.jpg"
   },
   {
     "id": 218,
@@ -3014,7 +3014,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Far Cry 5.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Far%20Cry%205.jpg"
   },
   {
     "id": 219,
@@ -3028,7 +3028,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Avatar Frontiers of Pandora.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Avatar%20Frontiers%20of%20Pandora.jpg"
   },
   {
     "id": 220,
@@ -3042,7 +3042,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/220_star-wars-outlaws.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/220_star-wars-outlaws.jpg"
   },
   {
     "id": 221,
@@ -3056,7 +3056,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Prince of Persia The Lost Crown.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Prince%20of%20Persia%20The%20Lost%20Crown.jpg"
   },
   {
     "id": 222,
@@ -3070,7 +3070,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Watch Dogs Legion.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Watch%20Dogs%20Legion.jpg"
   },
   {
     "id": 223,
@@ -3084,7 +3084,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/The Crew Motorfest.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/The%20Crew%20Motorfest.jpg"
   },
   {
     "id": 224,
@@ -3098,7 +3098,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Riders Republic.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Riders%20Republic.jpg"
   },
   {
     "id": 225,
@@ -3112,7 +3112,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/225_rainbow-six-siege.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/225_rainbow-six-siege.jpg"
   },
   {
     "id": 226,
@@ -3126,7 +3126,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Just Dance 2026 Edition.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Just%20Dance%202026%20Edition.jpg"
   },
   {
     "id": 227,
@@ -3140,7 +3140,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/227_resident-evil-2.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/227_resident-evil-2.jpg"
   },
   {
     "id": 228,
@@ -3154,7 +3154,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/228_resident-evil-3.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/228_resident-evil-3.jpg"
   },
   {
     "id": 229,
@@ -3168,7 +3168,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Resident Evil 4.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Resident%20Evil%204.jpg"
   },
   {
     "id": 230,
@@ -3182,7 +3182,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Resident Evil Village.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Resident%20Evil%20Village.jpg"
   },
   {
     "id": 231,
@@ -3196,7 +3196,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/231_resident-evil-7.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/231_resident-evil-7.jpg"
   },
   {
     "id": 232,
@@ -3210,7 +3210,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Resident Evil Requiem.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Resident%20Evil%20Requiem.jpg"
   },
   {
     "id": 233,
@@ -3224,7 +3224,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Silent Hill 2.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Silent%20Hill%202.jpg"
   },
   {
     "id": 234,
@@ -3238,7 +3238,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/234_silent-hill-f.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/234_silent-hill-f.jpg"
   },
   {
     "id": 235,
@@ -3252,7 +3252,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/235_alan-wake-2.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/235_alan-wake-2.jpg"
   },
   {
     "id": 236,
@@ -3266,7 +3266,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Dead Space.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Dead%20Space.jpg"
   },
   {
     "id": 237,
@@ -3280,7 +3280,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/The Callisto Protocol.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/The%20Callisto%20Protocol.jpg"
   },
   {
     "id": 238,
@@ -3294,7 +3294,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Dead Island 2.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Dead%20Island%202.jpg"
   },
   {
     "id": 239,
@@ -3308,7 +3308,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Dying Light 2 Stay Human.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Dying%20Light%202%20Stay%20Human.jpg"
   },
   {
     "id": 240,
@@ -3322,7 +3322,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/240_dying-light-the-beast.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/240_dying-light-the-beast.jpg"
   },
   {
     "id": 241,
@@ -3336,7 +3336,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/241_until-dawn.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/241_until-dawn.jpg"
   },
   {
     "id": 242,
@@ -3350,7 +3350,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Elden Ring.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Elden%20Ring.jpg"
   },
   {
     "id": 243,
@@ -3364,7 +3364,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Elden Ring Nightreign.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Elden%20Ring%20Nightreign.jpg"
   },
   {
     "id": 244,
@@ -3378,7 +3378,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/244_baldur-s-gate-3.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/244_baldur-s-gate-3.jpg"
   },
   {
     "id": 245,
@@ -3392,7 +3392,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Dragon's Dogma 2.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Dragon%27s%20Dogma%202.jpg"
   },
   {
     "id": 246,
@@ -3406,7 +3406,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Final Fantasy VII Rebirth.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Final%20Fantasy%20VII%20Rebirth.jpg"
   },
   {
     "id": 247,
@@ -3420,7 +3420,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Final Fantasy XVI.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Final%20Fantasy%20XVI.jpg"
   },
   {
     "id": 248,
@@ -3434,7 +3434,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Final Fantasy VII Remake Intergrade.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Final%20Fantasy%20VII%20Remake%20Intergrade.jpg"
   },
   {
     "id": 249,
@@ -3448,7 +3448,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Metaphor ReFantazio.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Metaphor%20ReFantazio.jpg"
   },
   {
     "id": 250,
@@ -3462,7 +3462,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/250_persona-3-reload.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/250_persona-3-reload.jpg"
   },
   {
     "id": 251,
@@ -3476,7 +3476,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Persona 5 Royal.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Persona%205%20Royal.jpg"
   },
   {
     "id": 252,
@@ -3490,7 +3490,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Like a Dragon Infinite Wealth.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Like%20a%20Dragon%20Infinite%20Wealth.jpg"
   },
   {
     "id": 253,
@@ -3504,7 +3504,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/253_like-a-dragon-gaiden.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/253_like-a-dragon-gaiden.jpg"
   },
   {
     "id": 254,
@@ -3518,7 +3518,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/254_monster-hunter-wilds.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/254_monster-hunter-wilds.jpg"
   },
   {
     "id": 255,
@@ -3532,7 +3532,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/255_monster-hunter-rise-sunbreak.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/255_monster-hunter-rise-sunbreak.jpg"
   },
   {
     "id": 256,
@@ -3546,7 +3546,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Black Myth Wukong.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Black%20Myth%20Wukong.jpg"
   },
   {
     "id": 257,
@@ -3560,7 +3560,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/257_clair-obscur-expedition-33.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/257_clair-obscur-expedition-33.jpg"
   },
   {
     "id": 258,
@@ -3574,7 +3574,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Kingdom Come Deliverance II.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Kingdom%20Come%20Deliverance%20II.jpg"
   },
   {
     "id": 259,
@@ -3588,7 +3588,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Cyberpunk 2077 Ultimate Edition.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Cyberpunk%202077%20Ultimate%20Edition.jpg"
   },
   {
     "id": 260,
@@ -3602,7 +3602,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Hogwarts Legacy.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Hogwarts%20Legacy.jpg"
   },
   {
     "id": 261,
@@ -3616,7 +3616,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/261_avowed.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/261_avowed.jpg"
   },
   {
     "id": 262,
@@ -3630,7 +3630,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Call of Duty Black Ops 6.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Call%20of%20Duty%20Black%20Ops%206.jpg"
   },
   {
     "id": 263,
@@ -3644,7 +3644,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Call of Duty Black Ops 7.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Call%20of%20Duty%20Black%20Ops%207.jpg"
   },
   {
     "id": 264,
@@ -3658,7 +3658,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Call of Duty Modern Warfare III.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Call%20of%20Duty%20Modern%20Warfare%20III.jpg"
   },
   {
     "id": 265,
@@ -3672,7 +3672,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Call of Duty Modern Warfare II.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Call%20of%20Duty%20Modern%20Warfare%20II.jpg"
   },
   {
     "id": 266,
@@ -3686,7 +3686,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Call of Duty Vanguard.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Call%20of%20Duty%20Vanguard.jpg"
   },
   {
     "id": 267,
@@ -3700,7 +3700,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Call of Duty Modern Warfare.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Call%20of%20Duty%20Modern%20Warfare.jpg"
   },
   {
     "id": 268,
@@ -3714,7 +3714,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Battlefield 2042.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Battlefield%202042.jpg"
   },
   {
     "id": 269,
@@ -3728,7 +3728,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/269_battlefield-v.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/269_battlefield-v.jpg"
   },
   {
     "id": 270,
@@ -3742,7 +3742,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/270_doom-eternal.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/270_doom-eternal.jpg"
   },
   {
     "id": 271,
@@ -3756,7 +3756,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/271_doom-the-dark-ages.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/271_doom-the-dark-ages.jpg"
   },
   {
     "id": 272,
@@ -3770,7 +3770,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Borderlands 3.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Borderlands%203.jpg"
   },
   {
     "id": 273,
@@ -3784,7 +3784,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Borderlands 4.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Borderlands%204.jpg"
   },
   {
     "id": 274,
@@ -3798,7 +3798,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS5",
     "source_file": "games.xlsx",
     "sheet_name": "PS5",
-    "image": "images/PS5/Far Cry 6.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS5/Far%20Cry%206.jpg"
   },
   {
     "id": 275,
@@ -3812,7 +3812,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/PS4/God of War.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS4/God%20of%20War.jpg"
   },
   {
     "id": 276,
@@ -3826,7 +3826,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/PS4/God of War Ragnar\u00f6k.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS4/God%20of%20War%20Ragnar%C3%B6k.jpg"
   },
   {
     "id": 277,
@@ -3840,7 +3840,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/PS4/The Last of Us Remastered.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS4/The%20Last%20of%20Us%20Remastered.jpg"
   },
   {
     "id": 278,
@@ -3854,7 +3854,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/PS4/The Last of Us Part II.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS4/The%20Last%20of%20Us%20Part%20II.jpg"
   },
   {
     "id": 279,
@@ -3868,7 +3868,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/PS4/Marvel's Spider-Man.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS4/Marvel%27s%20Spider-Man.jpg"
   },
   {
     "id": 280,
@@ -3882,7 +3882,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/PS4/Marvel's Spider-Man Miles Morales.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS4/Marvel%27s%20Spider-Man%20Miles%20Morales.jpg"
   },
   {
     "id": 281,
@@ -3896,7 +3896,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/PS4/Horizon Zero Dawn.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS4/Horizon%20Zero%20Dawn.jpg"
   },
   {
     "id": 282,
@@ -3910,7 +3910,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/PS4/Horizon Forbidden West.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS4/Horizon%20Forbidden%20West.jpg"
   },
   {
     "id": 283,
@@ -3924,7 +3924,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/PS4/Ghost of Tsushima.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS4/Ghost%20of%20Tsushima.jpg"
   },
   {
     "id": 284,
@@ -3938,7 +3938,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/PS4/Gran Turismo Sport.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS4/Gran%20Turismo%20Sport.jpg"
   },
   {
     "id": 285,
@@ -3952,7 +3952,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/PS4/Gran Turismo 7.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS4/Gran%20Turismo%207.jpg"
   },
   {
     "id": 286,
@@ -3966,7 +3966,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/PS4/Uncharted 4 A Thief's End.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS4/Uncharted%204%20A%20Thief%27s%20End.jpg"
   },
   {
     "id": 287,
@@ -3980,7 +3980,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/PS4/Uncharted The Lost Legacy.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS4/Uncharted%20The%20Lost%20Legacy.jpg"
   },
   {
     "id": 288,
@@ -3994,7 +3994,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/PS4/Bloodborne.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS4/Bloodborne.jpg"
   },
   {
     "id": 289,
@@ -4008,7 +4008,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/PS4/Days Gone.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS4/Days%20Gone.jpg"
   },
   {
     "id": 290,
@@ -4022,7 +4022,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/PS4/Death Stranding.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS4/Death%20Stranding.jpg"
   },
   {
     "id": 291,
@@ -4036,7 +4036,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/PS4/Infamous Second Son.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS4/Infamous%20Second%20Son.jpg"
   },
   {
     "id": 292,
@@ -4050,7 +4050,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/PS4/Ratchet & Clank.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS4/Ratchet%20%26%20Clank.jpg"
   },
   {
     "id": 293,
@@ -4064,7 +4064,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/PS4/Shadow of the Colossus.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS4/Shadow%20of%20the%20Colossus.jpg"
   },
   {
     "id": 294,
@@ -4078,7 +4078,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/PS4/Dreams.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS4/Dreams.jpg"
   },
   {
     "id": 295,
@@ -4092,7 +4092,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/295_gta-v.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/295_gta-v.jpg"
   },
   {
     "id": 296,
@@ -4106,7 +4106,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/PS4/Red Dead Redemption 2.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS4/Red%20Dead%20Redemption%202.jpg"
   },
   {
     "id": 297,
@@ -4120,7 +4120,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/PS4/Red Dead Redemption.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS4/Red%20Dead%20Redemption.jpg"
   },
   {
     "id": 298,
@@ -4134,7 +4134,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/PS4/Cyberpunk 2077.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS4/Cyberpunk%202077.jpg"
   },
   {
     "id": 299,
@@ -4148,7 +4148,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/PS4/Elden Ring.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS4/Elden%20Ring.jpg"
   },
   {
     "id": 300,
@@ -4162,7 +4162,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/PS4/Dark Souls Remastered.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS4/Dark%20Souls%20Remastered.jpg"
   },
   {
     "id": 301,
@@ -4176,7 +4176,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/PS4/Dark Souls II.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS4/Dark%20Souls%20II.jpg"
   },
   {
     "id": 302,
@@ -4190,7 +4190,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/PS4/Dark Souls III.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS4/Dark%20Souls%20III.jpg"
   },
   {
     "id": 303,
@@ -4204,7 +4204,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/PS4/Sekiro Shadows Die Twice.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS4/Sekiro%20Shadows%20Die%20Twice.jpg"
   },
   {
     "id": 304,
@@ -4218,7 +4218,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/PS4/Resident Evil 2.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS4/Resident%20Evil%202.jpg"
   },
   {
     "id": 305,
@@ -4232,7 +4232,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/PS4/Resident Evil 3.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS4/Resident%20Evil%203.jpg"
   },
   {
     "id": 306,
@@ -4246,7 +4246,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/306_resident-evil-4.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/306_resident-evil-4.jpg"
   },
   {
     "id": 307,
@@ -4260,7 +4260,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/PS4/Resident Evil 7.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS4/Resident%20Evil%207.jpg"
   },
   {
     "id": 308,
@@ -4274,7 +4274,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/PS4/Resident Evil Village.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS4/Resident%20Evil%20Village.jpg"
   },
   {
     "id": 309,
@@ -4288,7 +4288,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/PS4/Assassin's Creed Valhalla.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS4/Assassin%27s%20Creed%20Valhalla.jpg"
   },
   {
     "id": 310,
@@ -4302,7 +4302,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/PS4/Assassin's Creed Odyssey.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS4/Assassin%27s%20Creed%20Odyssey.jpg"
   },
   {
     "id": 311,
@@ -4316,7 +4316,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/PS4/Assassin's Creed Origins.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS4/Assassin%27s%20Creed%20Origins.jpg"
   },
   {
     "id": 312,
@@ -4330,7 +4330,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/PS4/Far Cry 4.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS4/Far%20Cry%204.jpg"
   },
   {
     "id": 313,
@@ -4344,7 +4344,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/PS4/Far Cry 5.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS4/Far%20Cry%205.jpg"
   },
   {
     "id": 314,
@@ -4358,7 +4358,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/PS4/Far Cry 6.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS4/Far%20Cry%206.jpg"
   },
   {
     "id": 315,
@@ -4372,7 +4372,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/PS4/Watch Dogs.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS4/Watch%20Dogs.jpg"
   },
   {
     "id": 316,
@@ -4386,7 +4386,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/PS4/Watch Dogs 2.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS4/Watch%20Dogs%202.jpg"
   },
   {
     "id": 317,
@@ -4400,7 +4400,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/PS4/Watch Dogs Legion.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS4/Watch%20Dogs%20Legion.jpg"
   },
   {
     "id": 318,
@@ -4414,7 +4414,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/PS4/The Witcher 3 Wild Hunt.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS4/The%20Witcher%203%20Wild%20Hunt.jpg"
   },
   {
     "id": 319,
@@ -4428,7 +4428,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/PS4/Hogwarts Legacy.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS4/Hogwarts%20Legacy.jpg"
   },
   {
     "id": 320,
@@ -4442,7 +4442,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/PS4/Monster Hunter World.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS4/Monster%20Hunter%20World.jpg"
   },
   {
     "id": 321,
@@ -4456,7 +4456,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/PS4/Sekiro.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS4/Sekiro.jpg"
   },
   {
     "id": 322,
@@ -4470,7 +4470,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/PS4/Mortal Kombat 11.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS4/Mortal%20Kombat%2011.jpg"
   },
   {
     "id": 323,
@@ -4484,7 +4484,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/PS4/Tekken 7.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS4/Tekken%207.jpg"
   },
   {
     "id": 324,
@@ -4498,7 +4498,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/PS4/Street Fighter V.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS4/Street%20Fighter%20V.jpg"
   },
   {
     "id": 325,
@@ -4512,7 +4512,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/PS4/EA Sports FC 24.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS4/EA%20Sports%20FC%2024.jpg"
   },
   {
     "id": 326,
@@ -4526,7 +4526,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/PS4/EA Sports FC 25.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS4/EA%20Sports%20FC%2025.jpg"
   },
   {
     "id": 327,
@@ -4540,7 +4540,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/327_wwe-2k24.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/327_wwe-2k24.jpg"
   },
   {
     "id": 328,
@@ -4554,7 +4554,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/328_wwe-2k25.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/328_wwe-2k25.jpg"
   },
   {
     "id": 329,
@@ -4568,7 +4568,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/329_nba-2k25.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/329_nba-2k25.jpg"
   },
   {
     "id": 330,
@@ -4582,7 +4582,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/330_f1-24.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/330_f1-24.jpg"
   },
   {
     "id": 331,
@@ -4596,7 +4596,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/PS4/Need for Speed Heat.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS4/Need%20for%20Speed%20Heat.jpg"
   },
   {
     "id": 332,
@@ -4610,7 +4610,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/332_need-for-speed-unbound.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/332_need-for-speed-unbound.jpg"
   },
   {
     "id": 333,
@@ -4624,7 +4624,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/PS4/Dying Light.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS4/Dying%20Light.jpg"
   },
   {
     "id": 334,
@@ -4638,7 +4638,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS4",
     "source_file": "games.xlsx",
     "sheet_name": "PS4",
-    "image": "images/PS4/Dying Light 2.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS4/Dying%20Light%202.jpg"
   },
   {
     "id": 335,
@@ -4652,7 +4652,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS3",
     "source_file": "games.xlsx",
     "sheet_name": "PS3",
-    "image": "images/335_gta-v.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/335_gta-v.jpg"
   },
   {
     "id": 336,
@@ -4666,7 +4666,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS3",
     "source_file": "games.xlsx",
     "sheet_name": "PS3",
-    "image": "images/336_gta-iv.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/336_gta-iv.jpg"
   },
   {
     "id": 337,
@@ -4680,7 +4680,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS3",
     "source_file": "games.xlsx",
     "sheet_name": "PS3",
-    "image": "images/PS3/Red Dead Redemption.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS3/Red%20Dead%20Redemption.jpg"
   },
   {
     "id": 338,
@@ -4694,7 +4694,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS3",
     "source_file": "games.xlsx",
     "sheet_name": "PS3",
-    "image": "images/PS3/The Last of Us.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS3/The%20Last%20of%20Us.jpg"
   },
   {
     "id": 339,
@@ -4708,7 +4708,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS3",
     "source_file": "games.xlsx",
     "sheet_name": "PS3",
-    "image": "images/PS3/Uncharted 2 Among Thieves.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS3/Uncharted%202%20Among%20Thieves.jpg"
   },
   {
     "id": 340,
@@ -4722,7 +4722,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS3",
     "source_file": "games.xlsx",
     "sheet_name": "PS3",
-    "image": "images/PS3/Uncharted 3 Drake's Deception.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS3/Uncharted%203%20Drake%27s%20Deception.jpg"
   },
   {
     "id": 341,
@@ -4736,7 +4736,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS3",
     "source_file": "games.xlsx",
     "sheet_name": "PS3",
-    "image": "images/PS3/Uncharted Drake's Fortune.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS3/Uncharted%20Drake%27s%20Fortune.jpg"
   },
   {
     "id": 342,
@@ -4750,7 +4750,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS3",
     "source_file": "games.xlsx",
     "sheet_name": "PS3",
-    "image": "images/PS3/God of War III.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS3/God%20of%20War%20III.jpg"
   },
   {
     "id": 343,
@@ -4764,7 +4764,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS3",
     "source_file": "games.xlsx",
     "sheet_name": "PS3",
-    "image": "images/PS3/God of War Collection.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS3/God%20of%20War%20Collection.jpg"
   },
   {
     "id": 344,
@@ -4778,7 +4778,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS3",
     "source_file": "games.xlsx",
     "sheet_name": "PS3",
-    "image": "images/PS3/God of War Ascension.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS3/God%20of%20War%20Ascension.jpg"
   },
   {
     "id": 345,
@@ -4792,7 +4792,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS3",
     "source_file": "games.xlsx",
     "sheet_name": "PS3",
-    "image": "images/PS3/Gran Turismo 6.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS3/Gran%20Turismo%206.jpg"
   },
   {
     "id": 346,
@@ -4806,7 +4806,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS3",
     "source_file": "games.xlsx",
     "sheet_name": "PS3",
-    "image": "images/PS3/Gran Turismo 5.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS3/Gran%20Turismo%205.jpg"
   },
   {
     "id": 347,
@@ -4820,7 +4820,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS3",
     "source_file": "games.xlsx",
     "sheet_name": "PS3",
-    "image": "images/PS3/Batman Arkham City.png"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS3/Batman%20Arkham%20City.png"
   },
   {
     "id": 348,
@@ -4834,7 +4834,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS3",
     "source_file": "games.xlsx",
     "sheet_name": "PS3",
-    "image": "images/PS3/Batman Arkham Asylum.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS3/Batman%20Arkham%20Asylum.jpg"
   },
   {
     "id": 349,
@@ -4848,7 +4848,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS3",
     "source_file": "games.xlsx",
     "sheet_name": "PS3",
-    "image": "images/PS3/Batman Arkham Origins.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS3/Batman%20Arkham%20Origins.jpg"
   },
   {
     "id": 350,
@@ -4862,7 +4862,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS3",
     "source_file": "games.xlsx",
     "sheet_name": "PS3",
-    "image": "images/PS3/Assassin's Creed II.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS3/Assassin%27s%20Creed%20II.jpg"
   },
   {
     "id": 351,
@@ -4876,7 +4876,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS3",
     "source_file": "games.xlsx",
     "sheet_name": "PS3",
-    "image": "images/PS3/Assassin's Creed Brotherhood.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS3/Assassin%27s%20Creed%20Brotherhood.jpg"
   },
   {
     "id": 352,
@@ -4890,7 +4890,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS3",
     "source_file": "games.xlsx",
     "sheet_name": "PS3",
-    "image": "images/PS3/Assassin's Creed III.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS3/Assassin%27s%20Creed%20III.jpg"
   },
   {
     "id": 353,
@@ -4904,7 +4904,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS3",
     "source_file": "games.xlsx",
     "sheet_name": "PS3",
-    "image": "images/PS3/Assassin's Creed IV Black Flag.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS3/Assassin%27s%20Creed%20IV%20Black%20Flag.jpg"
   },
   {
     "id": 354,
@@ -4918,7 +4918,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS3",
     "source_file": "games.xlsx",
     "sheet_name": "PS3",
-    "image": "images/PS3/Far Cry 3.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS3/Far%20Cry%203.jpg"
   },
   {
     "id": 355,
@@ -4932,7 +4932,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS3",
     "source_file": "games.xlsx",
     "sheet_name": "PS3",
-    "image": "images/PS3/Far Cry 4.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS3/Far%20Cry%204.jpg"
   },
   {
     "id": 356,
@@ -4946,7 +4946,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS3",
     "source_file": "games.xlsx",
     "sheet_name": "PS3",
-    "image": "images/PS3/Call of Duty Modern Warfare 2.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS3/Call%20of%20Duty%20Modern%20Warfare%202.jpg"
   },
   {
     "id": 357,
@@ -4960,7 +4960,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS3",
     "source_file": "games.xlsx",
     "sheet_name": "PS3",
-    "image": "images/PS3/Call of Duty Black Ops.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS3/Call%20of%20Duty%20Black%20Ops.jpg"
   },
   {
     "id": 358,
@@ -4974,7 +4974,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS3",
     "source_file": "games.xlsx",
     "sheet_name": "PS3",
-    "image": "images/PS3/Call of Duty Black Ops II.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS3/Call%20of%20Duty%20Black%20Ops%20II.jpg"
   },
   {
     "id": 359,
@@ -4988,7 +4988,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS3",
     "source_file": "games.xlsx",
     "sheet_name": "PS3",
-    "image": "images/PS3/Call of Duty Modern Warfare 3.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS3/Call%20of%20Duty%20Modern%20Warfare%203.jpg"
   },
   {
     "id": 360,
@@ -5002,7 +5002,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS3",
     "source_file": "games.xlsx",
     "sheet_name": "PS3",
-    "image": "images/PS3/Battlefield 3.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS3/Battlefield%203.jpg"
   },
   {
     "id": 361,
@@ -5016,7 +5016,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS3",
     "source_file": "games.xlsx",
     "sheet_name": "PS3",
-    "image": "images/PS3/Battlefield 4.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS3/Battlefield%204.jpg"
   },
   {
     "id": 362,
@@ -5030,7 +5030,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS3",
     "source_file": "games.xlsx",
     "sheet_name": "PS3",
-    "image": "images/PS3/The Elder Scrolls V Skyrim.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS3/The%20Elder%20Scrolls%20V%20Skyrim.jpg"
   },
   {
     "id": 363,
@@ -5044,7 +5044,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS3",
     "source_file": "games.xlsx",
     "sheet_name": "PS3",
-    "image": "images/PS3/Fallout 3.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS3/Fallout%203.jpg"
   },
   {
     "id": 364,
@@ -5058,7 +5058,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS3",
     "source_file": "games.xlsx",
     "sheet_name": "PS3",
-    "image": "images/PS3/Fallout New Vegas.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS3/Fallout%20New%20Vegas.jpg"
   },
   {
     "id": 365,
@@ -5072,7 +5072,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS3",
     "source_file": "games.xlsx",
     "sheet_name": "PS3",
-    "image": "images/PS3/Dark Souls.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS3/Dark%20Souls.jpg"
   },
   {
     "id": 366,
@@ -5086,7 +5086,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS3",
     "source_file": "games.xlsx",
     "sheet_name": "PS3",
-    "image": "images/PS3/Demon's Souls.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS3/Demon%27s%20Souls.jpg"
   },
   {
     "id": 367,
@@ -5100,7 +5100,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS3",
     "source_file": "games.xlsx",
     "sheet_name": "PS3",
-    "image": "images/PS3/Resident Evil 5.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS3/Resident%20Evil%205.jpg"
   },
   {
     "id": 368,
@@ -5114,7 +5114,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS3",
     "source_file": "games.xlsx",
     "sheet_name": "PS3",
-    "image": "images/PS3/Resident Evil 6.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS3/Resident%20Evil%206.jpg"
   },
   {
     "id": 369,
@@ -5128,7 +5128,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS3",
     "source_file": "games.xlsx",
     "sheet_name": "PS3",
-    "image": "images/PS3/Dead Space 2.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS3/Dead%20Space%202.jpg"
   },
   {
     "id": 370,
@@ -5142,7 +5142,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS3",
     "source_file": "games.xlsx",
     "sheet_name": "PS3",
-    "image": "images/PS3/Mortal Kombat Komplete Edition.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS3/Mortal%20Kombat%20Komplete%20Edition.jpg"
   },
   {
     "id": 371,
@@ -5156,7 +5156,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS3",
     "source_file": "games.xlsx",
     "sheet_name": "PS3",
-    "image": "images/PS3/Tekken 6.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS3/Tekken%206.jpg"
   },
   {
     "id": 372,
@@ -5170,7 +5170,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS3",
     "source_file": "games.xlsx",
     "sheet_name": "PS3",
-    "image": "images/PS3/Tekken Tag Tournament 2.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS3/Tekken%20Tag%20Tournament%202.jpg"
   },
   {
     "id": 373,
@@ -5184,7 +5184,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS3",
     "source_file": "games.xlsx",
     "sheet_name": "PS3",
-    "image": "images/PS3/Ultra Street Fighter IV.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS3/Ultra%20Street%20Fighter%20IV.jpg"
   },
   {
     "id": 374,
@@ -5198,7 +5198,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS3",
     "source_file": "games.xlsx",
     "sheet_name": "PS3",
-    "image": "images/PS3/Dragon Ball Raging Blast 2.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS3/Dragon%20Ball%20Raging%20Blast%202.jpg"
   },
   {
     "id": 375,
@@ -5212,7 +5212,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS3",
     "source_file": "games.xlsx",
     "sheet_name": "PS3",
-    "image": "images/PS3/Naruto Shippuden Ultimate Ninja Storm 3.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS3/Naruto%20Shippuden%20Ultimate%20Ninja%20Storm%203.jpg"
   },
   {
     "id": 376,
@@ -5226,7 +5226,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS3",
     "source_file": "games.xlsx",
     "sheet_name": "PS3",
-    "image": "images/376_need-for-speed-most-wanted.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/376_need-for-speed-most-wanted.jpg"
   },
   {
     "id": 377,
@@ -5240,7 +5240,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS3",
     "source_file": "games.xlsx",
     "sheet_name": "PS3",
-    "image": "images/PS3/Need for Speed Hot Pursuit.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS3/Need%20for%20Speed%20Hot%20Pursuit.jpg"
   },
   {
     "id": 378,
@@ -5254,7 +5254,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS3",
     "source_file": "games.xlsx",
     "sheet_name": "PS3",
-    "image": "images/PS3/Midnight Club Los Angeles.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS3/Midnight%20Club%20Los%20Angeles.jpg"
   },
   {
     "id": 379,
@@ -5268,7 +5268,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS3",
     "source_file": "games.xlsx",
     "sheet_name": "PS3",
-    "image": "images/PS3/Minecraft PlayStation 3 Edition.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS3/Minecraft%20PlayStation%203%20Edition.jpg"
   },
   {
     "id": 380,
@@ -5282,7 +5282,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS3",
     "source_file": "games.xlsx",
     "sheet_name": "PS3",
-    "image": "images/380_metal-gear-solid-4.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/380_metal-gear-solid-4.jpg"
   },
   {
     "id": 381,
@@ -5296,7 +5296,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS3",
     "source_file": "games.xlsx",
     "sheet_name": "PS3",
-    "image": "images/PS3/Metal Gear Solid V The Phantom Pain.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS3/Metal%20Gear%20Solid%20V%20The%20Phantom%20Pain.jpg"
   },
   {
     "id": 382,
@@ -5310,7 +5310,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS3",
     "source_file": "games.xlsx",
     "sheet_name": "PS3",
-    "image": "images/PS3/BioShock Infinite.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS3/BioShock%20Infinite.jpg"
   },
   {
     "id": 383,
@@ -5324,7 +5324,7 @@ const PRODUCTS_DATA = [
     "compatibility": "PS3",
     "source_file": "games.xlsx",
     "sheet_name": "PS3",
-    "image": "images/PS3/Assassin's Creed IV Black Flag.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/PS3/Assassin%27s%20Creed%20IV%20Black%20Flag.jpg"
   },
   {
     "id": 384,
@@ -5338,7 +5338,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX SERIES X",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX SERIES X",
-    "image": "images/XBOX SERIES X/Forza Horizon 5.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20SERIES%20X/Forza%20Horizon%205.jpg"
   },
   {
     "id": 385,
@@ -5352,7 +5352,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX SERIES X",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX SERIES X",
-    "image": "images/XBOX SERIES X/Forza Motorsport.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20SERIES%20X/Forza%20Motorsport.jpg"
   },
   {
     "id": 386,
@@ -5366,7 +5366,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX SERIES X",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX SERIES X",
-    "image": "images/XBOX SERIES X/Halo Infinite.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20SERIES%20X/Halo%20Infinite.jpg"
   },
   {
     "id": 387,
@@ -5380,7 +5380,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX SERIES X",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX SERIES X",
-    "image": "images/387_halo-the-master-chief-collection.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/387_halo-the-master-chief-collection.jpg"
   },
   {
     "id": 388,
@@ -5394,7 +5394,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX SERIES X",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX SERIES X",
-    "image": "images/XBOX SERIES X/Microsoft Flight Simulator.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20SERIES%20X/Microsoft%20Flight%20Simulator.jpg"
   },
   {
     "id": 389,
@@ -5408,7 +5408,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX SERIES X",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX SERIES X",
-    "image": "images/XBOX SERIES X/Starfield.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20SERIES%20X/Starfield.jpg"
   },
   {
     "id": 390,
@@ -5422,7 +5422,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX SERIES X",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX SERIES X",
-    "image": "images/390_indiana-jones-and-the-great-circle.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/390_indiana-jones-and-the-great-circle.jpg"
   },
   {
     "id": 391,
@@ -5436,7 +5436,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX SERIES X",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX SERIES X",
-    "image": "images/XBOX SERIES X/Avowed.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20SERIES%20X/Avowed.jpg"
   },
   {
     "id": 392,
@@ -5450,7 +5450,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX SERIES X",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX SERIES X",
-    "image": "images/XBOX SERIES X/Senua's Saga Hellblade II.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20SERIES%20X/Senua%27s%20Saga%20Hellblade%20II.jpg"
   },
   {
     "id": 393,
@@ -5464,7 +5464,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX SERIES X",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX SERIES X",
-    "image": "images/393_gears-5.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/393_gears-5.jpg"
   },
   {
     "id": 394,
@@ -5478,7 +5478,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX SERIES X",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX SERIES X",
-    "image": "images/394_gears-of-war-reloaded.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/394_gears-of-war-reloaded.jpg"
   },
   {
     "id": 395,
@@ -5492,7 +5492,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX SERIES X",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX SERIES X",
-    "image": "images/XBOX SERIES X/Age of Mythology Retold.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20SERIES%20X/Age%20of%20Mythology%20Retold.jpg"
   },
   {
     "id": 396,
@@ -5506,7 +5506,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX SERIES X",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX SERIES X",
-    "image": "images/396_killer-instinct-anniversary-edition.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/396_killer-instinct-anniversary-edition.jpg"
   },
   {
     "id": 397,
@@ -5520,7 +5520,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX SERIES X",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX SERIES X",
-    "image": "images/397_gta-v.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/397_gta-v.jpg"
   },
   {
     "id": 398,
@@ -5534,7 +5534,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX SERIES X",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX SERIES X",
-    "image": "images/398_red-dead-redemption-2.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/398_red-dead-redemption-2.jpg"
   },
   {
     "id": 399,
@@ -5548,7 +5548,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX SERIES X",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX SERIES X",
-    "image": "images/XBOX SERIES X/Cyberpunk 2077 Ultimate Edition.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20SERIES%20X/Cyberpunk%202077%20Ultimate%20Edition.jpg"
   },
   {
     "id": 400,
@@ -5562,7 +5562,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX SERIES X",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX SERIES X",
-    "image": "images/XBOX SERIES X/Elden Ring.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20SERIES%20X/Elden%20Ring.jpg"
   },
   {
     "id": 401,
@@ -5576,7 +5576,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX SERIES X",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX SERIES X",
-    "image": "images/XBOX SERIES X/Elden Ring Nightreign.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20SERIES%20X/Elden%20Ring%20Nightreign.jpg"
   },
   {
     "id": 402,
@@ -5590,7 +5590,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX SERIES X",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX SERIES X",
-    "image": "images/402_baldur-s-gate-3.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/402_baldur-s-gate-3.jpg"
   },
   {
     "id": 403,
@@ -5604,7 +5604,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX SERIES X",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX SERIES X",
-    "image": "images/XBOX SERIES X/Call of Duty Black Ops 6.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20SERIES%20X/Call%20of%20Duty%20Black%20Ops%206.jpg"
   },
   {
     "id": 404,
@@ -5618,7 +5618,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX SERIES X",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX SERIES X",
-    "image": "images/XBOX SERIES X/Call of Duty Black Ops 7.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20SERIES%20X/Call%20of%20Duty%20Black%20Ops%207.jpg"
   },
   {
     "id": 405,
@@ -5632,7 +5632,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX SERIES X",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX SERIES X",
-    "image": "images/XBOX SERIES X/Call of Duty Modern Warfare III.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20SERIES%20X/Call%20of%20Duty%20Modern%20Warfare%20III.jpg"
   },
   {
     "id": 406,
@@ -5646,7 +5646,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX SERIES X",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX SERIES X",
-    "image": "images/XBOX SERIES X/Resident Evil 4.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20SERIES%20X/Resident%20Evil%204.jpg"
   },
   {
     "id": 407,
@@ -5660,7 +5660,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX SERIES X",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX SERIES X",
-    "image": "images/XBOX SERIES X/Resident Evil Village.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20SERIES%20X/Resident%20Evil%20Village.jpg"
   },
   {
     "id": 408,
@@ -5674,7 +5674,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX SERIES X",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX SERIES X",
-    "image": "images/408_resident-evil-requiem.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/408_resident-evil-requiem.jpg"
   },
   {
     "id": 409,
@@ -5688,7 +5688,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX SERIES X",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX SERIES X",
-    "image": "images/409_silent-hill-2.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/409_silent-hill-2.jpg"
   },
   {
     "id": 410,
@@ -5702,7 +5702,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX SERIES X",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX SERIES X",
-    "image": "images/XBOX SERIES X/Assassin's Creed Shadows.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20SERIES%20X/Assassin%27s%20Creed%20Shadows.jpg"
   },
   {
     "id": 411,
@@ -5716,7 +5716,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX SERIES X",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX SERIES X",
-    "image": "images/XBOX SERIES X/Assassin's Creed Mirage.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20SERIES%20X/Assassin%27s%20Creed%20Mirage.jpg"
   },
   {
     "id": 412,
@@ -5730,7 +5730,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX SERIES X",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX SERIES X",
-    "image": "images/XBOX SERIES X/Far Cry 6.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20SERIES%20X/Far%20Cry%206.jpg"
   },
   {
     "id": 413,
@@ -5744,7 +5744,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX SERIES X",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX SERIES X",
-    "image": "images/XBOX SERIES X/Avatar Frontiers of Pandora.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20SERIES%20X/Avatar%20Frontiers%20of%20Pandora.jpg"
   },
   {
     "id": 414,
@@ -5758,7 +5758,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX SERIES X",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX SERIES X",
-    "image": "images/414_star-wars-outlaws.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/414_star-wars-outlaws.jpg"
   },
   {
     "id": 415,
@@ -5772,7 +5772,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX SERIES X",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX SERIES X",
-    "image": "images/XBOX SERIES X/Star Wars Jedi Survivor.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20SERIES%20X/Star%20Wars%20Jedi%20Survivor.jpg"
   },
   {
     "id": 416,
@@ -5786,7 +5786,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX SERIES X",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX SERIES X",
-    "image": "images/XBOX SERIES X/EA SPORTS FC 26.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20SERIES%20X/EA%20SPORTS%20FC%2026.jpg"
   },
   {
     "id": 417,
@@ -5800,7 +5800,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX SERIES X",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX SERIES X",
-    "image": "images/417_f1-25.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/417_f1-25.jpg"
   },
   {
     "id": 418,
@@ -5814,7 +5814,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX SERIES X",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX SERIES X",
-    "image": "images/418_nba-2k26.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/418_nba-2k26.jpg"
   },
   {
     "id": 419,
@@ -5828,7 +5828,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX SERIES X",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX SERIES X",
-    "image": "images/419_wwe-2k26.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/419_wwe-2k26.jpg"
   },
   {
     "id": 420,
@@ -5842,7 +5842,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX SERIES X",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX SERIES X",
-    "image": "images/XBOX SERIES X/Mortal Kombat 1.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20SERIES%20X/Mortal%20Kombat%201.jpg"
   },
   {
     "id": 421,
@@ -5856,7 +5856,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX SERIES X",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX SERIES X",
-    "image": "images/XBOX SERIES X/Tekken 8.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20SERIES%20X/Tekken%208.jpg"
   },
   {
     "id": 422,
@@ -5870,7 +5870,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX SERIES X",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX SERIES X",
-    "image": "images/XBOX SERIES X/Street Fighter 6.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20SERIES%20X/Street%20Fighter%206.jpg"
   },
   {
     "id": 423,
@@ -5884,7 +5884,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX SERIES X",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX SERIES X",
-    "image": "images/XBOX SERIES X/Monster Hunter Wilds.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20SERIES%20X/Monster%20Hunter%20Wilds.jpg"
   },
   {
     "id": 424,
@@ -5898,7 +5898,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX SERIES X",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX SERIES X",
-    "image": "images/XBOX SERIES X/Dragon's Dogma 2.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20SERIES%20X/Dragon%27s%20Dogma%202.jpg"
   },
   {
     "id": 425,
@@ -5912,7 +5912,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX SERIES X",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX SERIES X",
-    "image": "images/425_black-myth-wukong.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/425_black-myth-wukong.jpg"
   },
   {
     "id": 426,
@@ -5926,7 +5926,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX SERIES X",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX SERIES X",
-    "image": "images/XBOX SERIES X/Hogwarts Legacy.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20SERIES%20X/Hogwarts%20Legacy.jpg"
   },
   {
     "id": 427,
@@ -5940,7 +5940,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX SERIES X",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX SERIES X",
-    "image": "images/427_doom-eternal.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/427_doom-eternal.jpg"
   },
   {
     "id": 428,
@@ -5954,7 +5954,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX SERIES X",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX SERIES X",
-    "image": "images/XBOX SERIES X/DOOM The Dark Ages.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20SERIES%20X/DOOM%20The%20Dark%20Ages.jpg"
   },
   {
     "id": 429,
@@ -5968,7 +5968,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX SERIES X",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX SERIES X",
-    "image": "images/429_borderlands-4.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/429_borderlands-4.jpg"
   },
   {
     "id": 430,
@@ -5982,7 +5982,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX SERIES X",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX SERIES X",
-    "image": "images/XBOX SERIES X/Kingdom Come Deliverance II.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20SERIES%20X/Kingdom%20Come%20Deliverance%20II.jpg"
   },
   {
     "id": 431,
@@ -5996,7 +5996,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX SERIES X",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX SERIES X",
-    "image": "images/431_clair-obscur-expedition-33.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/431_clair-obscur-expedition-33.jpg"
   },
   {
     "id": 432,
@@ -6010,7 +6010,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX ONE",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX ONE",
-    "image": "images/XBOX ONE/Halo 5 Guardians.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20ONE/Halo%205%20Guardians.jpg"
   },
   {
     "id": 433,
@@ -6024,7 +6024,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX ONE",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX ONE",
-    "image": "images/XBOX ONE/Halo Infinite.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20ONE/Halo%20Infinite.jpg"
   },
   {
     "id": 434,
@@ -6038,7 +6038,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX ONE",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX ONE",
-    "image": "images/XBOX ONE/Forza Horizon 4.png"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20ONE/Forza%20Horizon%204.png"
   },
   {
     "id": 435,
@@ -6052,7 +6052,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX ONE",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX ONE",
-    "image": "images/XBOX ONE/Forza Horizon 5.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20ONE/Forza%20Horizon%205.jpg"
   },
   {
     "id": 436,
@@ -6066,7 +6066,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX ONE",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX ONE",
-    "image": "images/XBOX ONE/Forza Motorsport 7.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20ONE/Forza%20Motorsport%207.jpg"
   },
   {
     "id": 437,
@@ -6080,7 +6080,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX ONE",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX ONE",
-    "image": "images/XBOX ONE/Gears 5.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20ONE/Gears%205.jpg"
   },
   {
     "id": 438,
@@ -6094,7 +6094,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX ONE",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX ONE",
-    "image": "images/XBOX ONE/Gears of War 4.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20ONE/Gears%20of%20War%204.jpg"
   },
   {
     "id": 439,
@@ -6108,7 +6108,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX ONE",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX ONE",
-    "image": "images/XBOX ONE/Sea of Thieves.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20ONE/Sea%20of%20Thieves.jpg"
   },
   {
     "id": 440,
@@ -6122,7 +6122,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX ONE",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX ONE",
-    "image": "images/440_sunset-overdrive.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/440_sunset-overdrive.jpg"
   },
   {
     "id": 441,
@@ -6136,7 +6136,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX ONE",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX ONE",
-    "image": "images/XBOX ONE/Ryse Son of Rome.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20ONE/Ryse%20Son%20of%20Rome.jpg"
   },
   {
     "id": 442,
@@ -6150,7 +6150,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX ONE",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX ONE",
-    "image": "images/442_killer-instinct.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/442_killer-instinct.jpg"
   },
   {
     "id": 443,
@@ -6164,7 +6164,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX ONE",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX ONE",
-    "image": "images/XBOX ONE/Quantum Break.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20ONE/Quantum%20Break.jpg"
   },
   {
     "id": 444,
@@ -6178,7 +6178,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX ONE",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX ONE",
-    "image": "images/XBOX ONE/Ori and the Blind Forest.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20ONE/Ori%20and%20the%20Blind%20Forest.jpg"
   },
   {
     "id": 445,
@@ -6192,7 +6192,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX ONE",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX ONE",
-    "image": "images/XBOX ONE/Ori and the Will of the Wisps.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20ONE/Ori%20and%20the%20Will%20of%20the%20Wisps.jpg"
   },
   {
     "id": 446,
@@ -6206,7 +6206,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX ONE",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX ONE",
-    "image": "images/446_gta-v.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/446_gta-v.jpg"
   },
   {
     "id": 447,
@@ -6220,7 +6220,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX ONE",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX ONE",
-    "image": "images/XBOX ONE/Red Dead Redemption.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20ONE/Red%20Dead%20Redemption.jpg"
   },
   {
     "id": 448,
@@ -6234,7 +6234,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX ONE",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX ONE",
-    "image": "images/XBOX ONE/Red Dead Redemption 2.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20ONE/Red%20Dead%20Redemption%202.jpg"
   },
   {
     "id": 449,
@@ -6248,7 +6248,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX ONE",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX ONE",
-    "image": "images/XBOX ONE/Cyberpunk 2077.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20ONE/Cyberpunk%202077.jpg"
   },
   {
     "id": 450,
@@ -6262,7 +6262,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX ONE",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX ONE",
-    "image": "images/XBOX ONE/The Witcher 3.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20ONE/The%20Witcher%203.jpg"
   },
   {
     "id": 451,
@@ -6276,7 +6276,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX ONE",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX ONE",
-    "image": "images/XBOX ONE/Elden Ring.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20ONE/Elden%20Ring.jpg"
   },
   {
     "id": 452,
@@ -6290,7 +6290,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX ONE",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX ONE",
-    "image": "images/XBOX ONE/Dark Souls III.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20ONE/Dark%20Souls%20III.jpg"
   },
   {
     "id": 453,
@@ -6304,7 +6304,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX ONE",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX ONE",
-    "image": "images/XBOX ONE/Sekiro.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20ONE/Sekiro.jpg"
   },
   {
     "id": 454,
@@ -6318,7 +6318,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX ONE",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX ONE",
-    "image": "images/XBOX ONE/Resident Evil 2.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20ONE/Resident%20Evil%202.jpg"
   },
   {
     "id": 455,
@@ -6332,7 +6332,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX ONE",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX ONE",
-    "image": "images/XBOX ONE/Resident Evil 3.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20ONE/Resident%20Evil%203.jpg"
   },
   {
     "id": 456,
@@ -6346,7 +6346,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX ONE",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX ONE",
-    "image": "images/XBOX ONE/Resident Evil 7.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20ONE/Resident%20Evil%207.jpg"
   },
   {
     "id": 457,
@@ -6360,7 +6360,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX ONE",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX ONE",
-    "image": "images/XBOX ONE/Resident Evil Village.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20ONE/Resident%20Evil%20Village.jpg"
   },
   {
     "id": 458,
@@ -6374,7 +6374,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX ONE",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX ONE",
-    "image": "images/XBOX ONE/Assassin's Creed Origins.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20ONE/Assassin%27s%20Creed%20Origins.jpg"
   },
   {
     "id": 459,
@@ -6388,7 +6388,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX ONE",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX ONE",
-    "image": "images/XBOX ONE/Assassin's Creed Odyssey.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20ONE/Assassin%27s%20Creed%20Odyssey.jpg"
   },
   {
     "id": 460,
@@ -6402,7 +6402,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX ONE",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX ONE",
-    "image": "images/XBOX ONE/Assassin's Creed Valhalla.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20ONE/Assassin%27s%20Creed%20Valhalla.jpg"
   },
   {
     "id": 461,
@@ -6416,7 +6416,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX ONE",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX ONE",
-    "image": "images/XBOX ONE/Far Cry 5.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20ONE/Far%20Cry%205.jpg"
   },
   {
     "id": 462,
@@ -6430,7 +6430,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX ONE",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX ONE",
-    "image": "images/XBOX ONE/Far Cry 6.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20ONE/Far%20Cry%206.jpg"
   },
   {
     "id": 463,
@@ -6444,7 +6444,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX ONE",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX ONE",
-    "image": "images/XBOX ONE/Watch Dogs 2.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20ONE/Watch%20Dogs%202.jpg"
   },
   {
     "id": 464,
@@ -6458,7 +6458,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX ONE",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX ONE",
-    "image": "images/XBOX ONE/Watch Dogs Legion.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20ONE/Watch%20Dogs%20Legion.jpg"
   },
   {
     "id": 465,
@@ -6472,7 +6472,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX ONE",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX ONE",
-    "image": "images/XBOX ONE/Hogwarts Legacy.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20ONE/Hogwarts%20Legacy.jpg"
   },
   {
     "id": 466,
@@ -6486,7 +6486,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX ONE",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX ONE",
-    "image": "images/XBOX ONE/DOOM Eternal.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20ONE/DOOM%20Eternal.jpg"
   },
   {
     "id": 467,
@@ -6500,7 +6500,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX ONE",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX ONE",
-    "image": "images/XBOX ONE/Mortal Kombat 11.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20ONE/Mortal%20Kombat%2011.jpg"
   },
   {
     "id": 468,
@@ -6514,7 +6514,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX ONE",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX ONE",
-    "image": "images/XBOX ONE/Tekken 7.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20ONE/Tekken%207.jpg"
   },
   {
     "id": 469,
@@ -6528,7 +6528,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX ONE",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX ONE",
-    "image": "images/469_street-fighter-6.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/469_street-fighter-6.jpg"
   },
   {
     "id": 470,
@@ -6542,7 +6542,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX ONE",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX ONE",
-    "image": "images/XBOX ONE/EA SPORTS FC 25.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20ONE/EA%20SPORTS%20FC%2025.jpg"
   },
   {
     "id": 471,
@@ -6556,7 +6556,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX ONE",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX ONE",
-    "image": "images/XBOX ONE/F1 24.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/XBOX%20ONE/F1%2024.jpg"
   },
   {
     "id": 472,
@@ -6570,7 +6570,7 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX ONE",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX ONE",
-    "image": "images/472_nba-2k25.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/472_nba-2k25.jpg"
   },
   {
     "id": 473,
@@ -6584,6 +6584,6 @@ const PRODUCTS_DATA = [
     "compatibility": "XBOX ONE",
     "source_file": "games.xlsx",
     "sheet_name": "XBOX ONE",
-    "image": "images/473_wwe-2k25.jpg"
+    "image": "https://cdn.jsdelivr.net/gh/elitecarthehub-prog/images@main/images/473_wwe-2k25.jpg"
   }
 ];
