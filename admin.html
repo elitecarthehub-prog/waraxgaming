@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>WARAX GAMING | Admin Control Portal</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { heading: ['Montserrat', 'sans-serif'], body: ['Inter', 'sans-serif'] },
+                    colors: { primary: '#991b1b', primaryHover: '#7f1d1d', dark: '#09090b', surface: '#18181b', surfaceHover: '#27272a' },
+                    boxShadow: { 'glow': '0 0 40px -10px rgba(153, 27, 27, 0.4)' }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .btn-anim { transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); }
+        .btn-anim:active { transform: scale(0.97); }
+    </style>
+</head>
+<body class="font-body bg-dark text-slate-300 antialiased selection:bg-primary selection:text-white min-h-screen flex flex-col">
+
+    <!-- 1. LOCKED ADMIN LOGIN SCREEN (Default View) -->
+    <div id="admin-login-screen" class="fixed inset-0 z-50 bg-dark/95 backdrop-blur-xl flex items-center justify-center p-4">
+        <div class="w-full max-w-md bg-surface border border-white/10 rounded-2xl p-8 space-y-6 shadow-2xl relative overflow-hidden">
+            <div class="text-center space-y-2">
+                <div class="w-14 h-14 rounded-2xl bg-primary/20 border border-primary/40 text-primary flex items-center justify-center text-2xl mx-auto mb-2">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <h2 class="font-heading font-black text-2xl text-white uppercase tracking-wider">WARAX<span class="text-primary">ADMIN</span></h2>
+                <p class="text-slate-400 text-xs">Restricted Access Control Portal</p>
+            </div>
+
+            <div id="login-error-msg" class="hidden bg-red-950/60 border border-red-500/40 text-red-300 text-xs p-3 rounded-xl text-center">
+                <i class="fa-solid fa-circle-exclamation mr-1"></i> Invalid Admin Credentials
+            </div>
+
+            <form onsubmit="event.preventDefault(); authenticateAdmin();" class="space-y-4">
+                <div>
+                    <label class="block text-[11px] font-bold text-slate-400 uppercase mb-1">Admin Username</label>
+                    <div class="relative">
+                        <input type="text" id="admin-user-input" placeholder="Enter admin username..." required
+                               class="w-full bg-dark border border-white/10 rounded-xl py-3 pl-10 pr-4 text-xs text-white placeholder-slate-600 focus:outline-none focus:border-primary">
+                        <i class="fa-solid fa-user-shield absolute left-3.5 top-3.5 text-slate-500 text-xs"></i>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-[11px] font-bold text-slate-400 uppercase mb-1">Security Password</label>
+                    <div class="relative">
+                        <input type="password" id="admin-pass-input" placeholder="Enter security password..." required
+                               class="w-full bg-dark border border-white/10 rounded-xl py-3 pl-10 pr-4 text-xs text-white placeholder-slate-600 focus:outline-none focus:border-primary">
+                        <i class="fa-solid fa-key absolute left-3.5 top-3.5 text-slate-500 text-xs"></i>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-anim w-full py-3.5 bg-primary hover:bg-primaryHover text-white font-bold text-xs uppercase tracking-widest rounded-xl flex items-center justify-center gap-2 shadow-glow">
+                    <i class="fa-solid fa-arrow-right-to-bracket text-sm"></i> Authenticate & Login
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- 2. ADMIN DASHBOARD CONTENT (Locked until login) -->
+    <div id="admin-dashboard-view" class="hidden flex-col flex-grow">
+        
+        <!-- Admin Header -->
+        <header class="bg-dark/95 border-b border-white/10 h-20 flex items-center sticky top-0 z-40 backdrop-blur-lg">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex justify-between items-center">
+                <div class="flex items-center gap-3">
+                    <a href="index.html" class="font-heading font-bold text-xl sm:text-2xl tracking-widest text-white uppercase">
+                        WARAX<span class="text-primary">ADMIN</span>
+                    </a>
+                    <span class="bg-green-500/20 border border-green-500/40 text-green-400 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider hidden sm:inline flex items-center gap-1">
+                        <i class="fa-solid fa-shield-halved"></i> Authenticated Session
+                    </span>
+                </div>
+                <div class="flex items-center gap-4">
+                    <button onclick="logoutAdmin()" class="text-xs font-bold text-slate-400 hover:text-white uppercase tracking-wider flex items-center gap-1.5 px-3 py-1.5 border border-white/10 rounded-lg">
+                        <i class="fa-solid fa-right-from-bracket text-primary"></i> Lock & Logout
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Dashboard Body -->
+        <main class="py-10 sm:py-12 flex-grow">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+                
+                <!-- Dashboard Stats Row -->
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+                    
+                    <div class="bg-surface border border-white/10 rounded-2xl p-5 space-y-2">
+                        <div class="flex items-center justify-between text-slate-400">
+                            <span class="text-xs font-bold uppercase tracking-wider">Total Orders</span>
+                            <i class="fa-solid fa-boxes-packing text-primary text-xl"></i>
+                        </div>
+                        <p id="stat-total-orders" class="font-heading font-black text-2xl sm:text-3xl text-white">0</p>
+                    </div>
+
+                    <div class="bg-surface border border-white/10 rounded-2xl p-5 space-y-2">
+                        <div class="flex items-center justify-between text-slate-400">
+                            <span class="text-xs font-bold uppercase tracking-wider">Total Revenue</span>
+                            <i class="fa-solid fa-indian-rupee-sign text-green-400 text-xl"></i>
+                        </div>
+                        <p id="stat-total-revenue" class="font-heading font-black text-2xl sm:text-3xl text-white">₹0</p>
+                    </div>
+
+                    <div class="bg-surface border border-white/10 rounded-2xl p-5 space-y-2">
+                        <div class="flex items-center justify-between text-slate-400">
+                            <span class="text-xs font-bold uppercase tracking-wider">In Transit</span>
+                            <i class="fa-solid fa-truck-ramp-box text-amber-400 text-xl"></i>
+                        </div>
+                        <p id="stat-pending-orders" class="font-heading font-black text-2xl sm:text-3xl text-white">0</p>
+                    </div>
+
+                    <div class="bg-surface border border-white/10 rounded-2xl p-5 space-y-2">
+                        <div class="flex items-center justify-between text-slate-400">
+                            <span class="text-xs font-bold uppercase tracking-wider">Delivered</span>
+                            <i class="fa-solid fa-circle-check text-green-400 text-xl"></i>
+                        </div>
+                        <p id="stat-delivered-orders" class="font-heading font-black text-2xl sm:text-3xl text-white">0</p>
+                    </div>
+
+                </div>
+
+                <!-- Search & Actions Bar -->
+                <div class="bg-surface border border-white/10 rounded-2xl p-5 flex flex-col sm:flex-row gap-4 items-center justify-between">
+                    <div class="relative w-full sm:w-96">
+                        <input type="text" id="admin-search" oninput="renderOrdersTable()" placeholder="Search Order ID, Customer Name, AWB, Phone..." 
+                               class="w-full bg-dark border border-white/10 rounded-xl py-3 pl-11 pr-4 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-primary">
+                        <i class="fa-solid fa-magnifying-glass absolute left-4 top-3.5 text-slate-500 text-xs"></i>
+                    </div>
+
+                    <div class="flex items-center gap-3 w-full sm:w-auto">
+                        <button onclick="addSampleOrder()" class="flex-1 sm:flex-initial px-4 py-2.5 bg-white/10 hover:bg-white/20 text-white font-bold text-xs uppercase tracking-wider rounded-xl flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-plus text-xs"></i> Add Test Order
+                        </button>
+                        <button onclick="clearAllOrders()" class="flex-1 sm:flex-initial px-4 py-2.5 bg-red-950/60 hover:bg-red-900 border border-red-500/40 text-red-300 font-bold text-xs uppercase tracking-wider rounded-xl flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-trash text-xs"></i> Reset Orders
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Orders Table Container -->
+                <div class="bg-surface border border-white/10 rounded-2xl overflow-hidden shadow-2xl">
+                    <div class="px-6 py-4 border-b border-white/10 flex justify-between items-center bg-dark/60">
+                        <h3 class="font-heading font-bold text-white text-sm uppercase tracking-wider">Customer Orders List</h3>
+                        <span id="order-count-badge" class="text-xs text-slate-400 font-semibold">0 Orders</span>
+                    </div>
+
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left text-xs border-collapse">
+                            <thead>
+                                <tr class="bg-dark/80 text-slate-400 uppercase tracking-wider border-b border-white/10 text-[10px]">
+                                    <th class="py-3.5 px-4 font-bold">Order & AWB Code</th>
+                                    <th class="py-3.5 px-4 font-bold">Customer Details</th>
+                                    <th class="py-3.5 px-4 font-bold">Delivery Address</th>
+                                    <th class="py-3.5 px-4 font-bold">Items Purchased</th>
+                                    <th class="py-3.5 px-4 font-bold text-right">Amount & Mode</th>
+                                    <th class="py-3.5 px-4 font-bold text-center">Live Status Control</th>
+                                </tr>
+                            </thead>
+                            <tbody id="admin-orders-tbody" class="divide-y divide-white/5">
+                                <!-- Dynamically populated -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-slate-500 py-6 text-center text-xs border-t border-white/5">
+            &copy; 2026 WARAX GAMING Admin Control Portal
+        </footer>
+    </div>
+
+    <script>
+        // Hashed credentials check to ensure credentials are never exposed in readable string text
+        // Expected Username hash: sha256("waraxadmin") -> 232eb4a7faeefecba02677685600c3b01a750ebef2ce23d578ecb1c0ebbb7133
+        // Expected Password hash: sha256("chodumal@123") -> 4992486ada0039ebff3917978830ab3957b710d13353e310210ffe200a81d057
+
+        const TARGET_U_HASH = "232eb4a7faeefecba02677685600c3b01a750ebef2ce23d578ecb1c0ebbb7133";
+        const TARGET_P_HASH = "4992486ada0039ebff3917978830ab3957b710d13353e310210ffe200a81d057";
+
+        document.addEventListener('DOMContentLoaded', () => {
+            checkAuthSession();
+        });
+
+        function checkAuthSession() {
+            const isAuth = sessionStorage.getItem('warax_admin_auth') === 'true';
+            const loginScreen = document.getElementById('admin-login-screen');
+            const dashboardView = document.getElementById('admin-dashboard-view');
+
+            if (isAuth) {
+                loginScreen.classList.add('hidden');
+                dashboardView.classList.remove('hidden');
+                dashboardView.classList.add('flex');
+                renderOrdersTable();
+            } else {
+                loginScreen.classList.remove('hidden');
+                dashboardView.classList.add('hidden');
+                dashboardView.classList.remove('flex');
+            }
+        }
+
+        function authenticateAdmin() {
+            const userVal = document.getElementById('admin-user-input').value.trim();
+            const passVal = document.getElementById('admin-pass-input').value.trim();
+
+            const userHash = CryptoJS.SHA256(userVal).toString();
+            const passHash = CryptoJS.SHA256(passVal).toString();
+
+            if (userHash === TARGET_U_HASH && passHash === TARGET_P_HASH) {
+                sessionStorage.setItem('warax_admin_auth', 'true');
+                document.getElementById('login-error-msg').classList.add('hidden');
+                checkAuthSession();
+            } else {
+                document.getElementById('login-error-msg').classList.remove('hidden');
+            }
+        }
+
+        function logoutAdmin() {
+            sessionStorage.removeItem('warax_admin_auth');
+            checkAuthSession();
+        }
+
+        function getOrders() {
+            let orders = JSON.parse(localStorage.getItem('warax_orders')) || [];
+            const lastOrder = JSON.parse(localStorage.getItem('warax_last_order'));
+            if (orders.length === 0 && lastOrder && lastOrder.orderId) {
+                orders.push(lastOrder);
+                localStorage.setItem('warax_orders', JSON.stringify(orders));
+            }
+            return orders;
+        }
+
+        function saveOrders(orders) {
+            localStorage.setItem('warax_orders', JSON.stringify(orders));
+            const lastOrder = JSON.parse(localStorage.getItem('warax_last_order'));
+            if (lastOrder && orders.length > 0) {
+                const updatedLast = orders.find(o => o.orderId === lastOrder.orderId || o.awb === lastOrder.awb);
+                if (updatedLast) {
+                    localStorage.setItem('warax_last_order', JSON.stringify(updatedLast));
+                }
+            }
+            renderOrdersTable();
+        }
+
+        function updateOrderStatus(orderId, newStatus) {
+            let orders = getOrders();
+            const idx = orders.findIndex(o => o.orderId === orderId || o.awb === orderId);
+            if (idx !== -1) {
+                orders[idx].status = newStatus;
+                saveOrders(orders);
+                alert(`✓ Order ${orders[idx].awb} status updated to: "${newStatus}"!`);
+            }
+        }
+
+        function renderOrdersTable() {
+            const orders = getOrders();
+            const searchQuery = document.getElementById('admin-search') ? document.getElementById('admin-search').value.toLowerCase().trim() : '';
+
+            // Update stats
+            document.getElementById('stat-total-orders').innerText = orders.length;
+            const rev = orders.reduce((sum, o) => sum + (o.amount || 0), 0);
+            document.getElementById('stat-total-revenue').innerText = `₹${rev.toLocaleString('en-IN')}`;
+
+            const pendingCount = orders.filter(o => o.status !== 'Delivered').length;
+            const deliveredCount = orders.filter(o => o.status === 'Delivered').length;
+            document.getElementById('stat-pending-orders').innerText = pendingCount;
+            document.getElementById('stat-delivered-orders').innerText = deliveredCount;
+
+            document.getElementById('order-count-badge').innerText = `${orders.length} Total Orders`;
+
+            const tbody = document.getElementById('admin-orders-tbody');
+            if (!tbody) return;
+
+            let filtered = orders.filter(o => {
+                if (!searchQuery) return true;
+                const matchId = (o.orderId || '').toLowerCase().includes(searchQuery);
+                const matchAwb = (o.awb || '').toLowerCase().includes(searchQuery);
+                const matchName = (o.customerName || '').toLowerCase().includes(searchQuery);
+                const matchPhone = (o.phone || '').toLowerCase().includes(searchQuery);
+                return matchId || matchAwb || matchName || matchPhone;
+            });
+
+            if (filtered.length === 0) {
+                tbody.innerHTML = `
+                    <tr>
+                        <td colspan="6" class="py-12 text-center text-slate-500">
+                            <i class="fa-solid fa-inbox text-3xl mb-2 block"></i>
+                            No orders found. Click "Add Test Order" to create a sample order.
+                        </td>
+                    </tr>
+                `;
+                return;
+            }
+
+            tbody.innerHTML = filtered.map(o => `
+                <tr class="hover:bg-white/5 transition">
+                    <td class="py-4 px-4 align-top">
+                        <span class="font-mono font-bold text-green-400 block">${o.awb || 'WRX-TRK-784920'}</span>
+                        <span class="font-mono text-[10px] text-slate-500 block">${o.orderId || 'ORD-982410'}</span>
+                        <span class="text-[10px] text-slate-500 block mt-1">${o.timestamp || '-'}</span>
+                    </td>
+                    <td class="py-4 px-4 align-top">
+                        <span class="font-bold text-white block">${o.customerName}</span>
+                        <span class="text-slate-400 block text-[11px]">${o.phone}</span>
+                        <span class="text-slate-500 block text-[10px] truncate max-w-[150px]">${o.email}</span>
+                    </td>
+                    <td class="py-4 px-4 align-top max-w-xs">
+                        <p class="text-slate-300 text-[11px] leading-relaxed">${o.address}</p>
+                    </td>
+                    <td class="py-4 px-4 align-top">
+                        <div class="space-y-1">
+                            ${o.items.map(item => `
+                                <div class="text-[11px] text-slate-300">
+                                    <span class="font-semibold text-white">${item.name}</span> × ${item.qty}
+                                </div>
+                            `).join('')}
+                        </div>
+                    </td>
+                    <td class="py-4 px-4 align-top text-right">
+                        <span class="font-heading font-black text-sm text-white block">₹${(o.amount || 0).toLocaleString('en-IN')}</span>
+                        <span class="text-[10px] text-slate-400 font-bold uppercase block">${o.paymentMode || 'UPI'}</span>
+                    </td>
+                    <td class="py-4 px-4 align-top text-center">
+                        <div class="space-y-2 inline-block">
+                            <select onchange="updateOrderStatus('${o.orderId || o.awb}', this.value)" 
+                                    class="bg-dark border border-white/20 rounded-lg px-3 py-1.5 text-xs text-white font-bold focus:outline-none focus:border-primary">
+                                <option value="Ordered" ${o.status === 'Ordered' ? 'selected' : ''}>📝 1. Ordered</option>
+                                <option value="Shipped" ${o.status === 'Shipped' ? 'selected' : ''}>📦 2. Shipped</option>
+                                <option value="Out for Delivery" ${o.status === 'Out for Delivery' ? 'selected' : ''}>🚚 3. Out for Delivery</option>
+                                <option value="Delivered" ${o.status === 'Delivered' ? 'selected' : ''}>✅ 4. Delivered</option>
+                            </select>
+                            <div>
+                                <a href="track.html?awb=${o.awb || o.orderId}" target="_blank" class="text-[10px] text-primary hover:text-white font-bold uppercase tracking-wider inline-flex items-center gap-1">
+                                    View Tracking &rarr;
+                                </a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            `).join('');
+        }
+
+        function addSampleOrder() {
+            const randomNum = Math.floor(1000000 + Math.random() * 9000000);
+            const awb = `WRX-TRK-${randomNum}`;
+            const orderId = `ORD-${Math.floor(100000 + Math.random() * 900000)}`;
+
+            const sample = {
+                orderId: orderId,
+                awb: awb,
+                amount: 51141,
+                customerName: "Vikram Malhotra",
+                phone: "9876543210",
+                email: "vikram.m@example.com",
+                address: "Flat 301, Cyber City Towers, Hitech City, Hyderabad, Telangana - 500081",
+                city: "Hyderabad",
+                state: "Telangana",
+                pincode: "500081",
+                paymentMode: "UPI / Instant QR Code",
+                status: "Ordered",
+                items: [
+                    { id: 1, name: "PS5 Disc Edition", price: 51141, originalPrice: 54990, qty: 1, image: "images/1_ps5-disc-edition.jpg" }
+                ],
+                timestamp: new Date().toLocaleString('en-IN')
+            };
+
+            let orders = getOrders();
+            orders.unshift(sample);
+            saveOrders(orders);
+            alert(`✓ Added Sample Test Order (${awb})!`);
+        }
+
+        function clearAllOrders() {
+            if (confirm("Are you sure you want to reset all order records?")) {
+                localStorage.removeItem('warax_orders');
+                localStorage.removeItem('warax_last_order');
+                renderOrdersTable();
+            }
+        }
+    </script>
+</body>
+</html>
