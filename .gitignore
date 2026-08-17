@@ -1,0 +1,6 @@
+.gemini/
+*.log
+*.tmp
+temp_*.js
+*.pyc
+__pycache__/

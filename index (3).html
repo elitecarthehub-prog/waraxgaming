@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>WARAX GAMING | Consoles & Premium Gaming Gear</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Your ultimate store for PS5, Xbox, Nintendo Switch, Pro Controllers, Headsets, VR, Console SSDs & Physical Games in Indian Rupees (INR ₹).">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        heading: ['Montserrat', 'sans-serif'],
+                        body: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#991b1b', /* Deep Crimson Red Accent */
+                        primaryHover: '#7f1d1d',
+                        dark: '#09090b', /* True Dark Background */
+                        surface: '#18181b', /* Slightly lighter for cards */
+                        surfaceHover: '#27272a',
+                    },
+                    boxShadow: {
+                        'glow': '0 0 40px -10px rgba(153, 27, 27, 0.3)',
+                    },
+                    letterSpacing: {
+                        'widest': '.25em',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom CSS -->
+    <style>
+        html { scroll-behavior: smooth; -webkit-tap-highlight-color: transparent; }
+        
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .hover-lift { transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s ease; }
+        @media (min-width: 768px) {
+            .hover-lift:hover { 
+                transform: translateY(-4px); 
+                border-color: rgba(153, 27, 27, 0.5);
+            }
+        }
+        
+        .btn-anim { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .btn-anim:active { transform: scale(0.96); }
+        
+        .img-overlay { position: relative; }
+        .img-overlay::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(9, 9, 11, 0.8) 0%, rgba(9, 9, 11, 0) 100%);
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="font-body bg-dark text-slate-300 antialiased selection:bg-primary selection:text-white min-h-screen flex flex-col">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed w-full top-0 z-50 bg-dark/90 backdrop-blur-lg border-b border-white/5 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 sm:h-20">
+                
+                <!-- Logo -->
+                <a href="#" class="flex-shrink-0 flex items-center cursor-pointer">
+                    <span class="font-heading font-bold text-xl sm:text-2xl tracking-widest text-white uppercase">
+                        WARAX<span class="text-primary">GAMING</span>
+                    </span>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#consoles" class="text-slate-400 hover:text-white text-xs sm:text-sm font-medium tracking-wide uppercase transition-colors">Consoles</a>
+                    <a href="#accessories" class="text-slate-400 hover:text-white text-xs sm:text-sm font-medium tracking-wide uppercase transition-colors">Accessories</a>
+                    <a href="#games" class="text-slate-400 hover:text-white text-xs sm:text-sm font-medium tracking-wide uppercase transition-colors">Physical Games</a>
+                    <a href="consoles.html" class="text-primary font-semibold text-xs uppercase tracking-widest hover:underline">
+                        All 133 Consoles <i class="fa-solid fa-arrow-right ml-1 text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Icons (Search, Cart, Mobile Menu) -->
+                <div class="flex items-center space-x-4 sm:space-x-6">
+                    <div class="relative hidden sm:block w-48 md:w-56">
+                        <input type="text" id="nav-search-input" onkeyup="handleSearch(event)" placeholder="Search catalog..." 
+                               class="w-full bg-surface border border-white/10 rounded-full py-1.5 px-4 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-primary">
+                    </div>
+
+                    <!-- Cart Icon -->
+                    <button class="text-slate-400 hover:text-white transition-colors focus:outline-none relative group p-2 min-h-[44px] min-w-[44px] flex items-center justify-center" aria-label="Cart" onclick="openPayUCheckout()">
+                        <i class="fa-solid fa-cart-shopping text-lg transition-transform group-hover:scale-110"></i>
+                        <span id="cart-count-badge" class="absolute top-0 right-0 bg-primary text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full border border-dark">0</span>
+                    </button>
+                    
+                    <!-- Mobile Hamburger -->
+                    <button class="md:hidden text-slate-400 hover:text-white focus:outline-none min-h-[44px] min-w-[44px] flex items-center justify-center" id="mobile-menu-btn" onclick="toggleMenu()" aria-label="Menu">
+                        <i class="fa-solid fa-bars text-xl" id="menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="md:hidden hidden bg-surface border-t border-white/5 absolute w-full shadow-2xl px-4 pt-4 pb-6 space-y-3" id="mobile-menu">
+            <input type="text" id="mobile-search-input" onkeyup="handleSearch(event)" placeholder="Search products..." class="w-full bg-dark border border-white/10 rounded-lg py-2.5 px-4 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-primary">
+            <a href="#consoles" onclick="toggleMenu()" class="block py-2.5 px-3 text-sm font-semibold text-slate-300 hover:bg-surfaceHover hover:text-white uppercase tracking-wide rounded-lg">Next-Gen Consoles</a>
+            <a href="#accessories" onclick="toggleMenu()" class="block py-2.5 px-3 text-sm font-semibold text-slate-300 hover:bg-surfaceHover hover:text-white uppercase tracking-wide rounded-lg">Accessories (Controllers, Headsets, VR)</a>
+            <a href="#games" onclick="toggleMenu()" class="block py-2.5 px-3 text-sm font-semibold text-slate-300 hover:bg-surfaceHover hover:text-white uppercase tracking-wide rounded-lg">Physical Console Games</a>
+            <a href="consoles.html" onclick="toggleMenu()" class="block py-2.5 px-3 text-sm font-bold text-primary hover:bg-surfaceHover uppercase tracking-wide rounded-lg">
+                <i class="fa-solid fa-gamepad mr-2"></i> All 133 Consoles Page →
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 md:pt-40 md:pb-32 px-4 overflow-hidden relative border-b border-white/5">
+        <div class="absolute top-1/4 right-1/4 w-[300px] sm:w-[500px] h-[300px] sm:h-[500px] bg-primary/10 rounded-full blur-[100px] sm:blur-[120px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10 md:gap-16 relative z-10">
+            <!-- Text Content -->
+            <div class="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left space-y-6 sm:space-y-8">
+                <div class="inline-flex items-center space-x-2.5 bg-surface/80 border border-white/10 px-3.5 py-1.5 backdrop-blur-sm rounded-full">
+                    <span class="relative flex h-2 w-2">
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                    </span>
+                    <span class="text-[11px] sm:text-xs font-semibold text-slate-300 uppercase tracking-widest">PS5 Pro • Console & Physical Games Store</span>
+                </div>
+                
+                <h1 class="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight uppercase tracking-tight">
+                    Dominate <br/>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-500">The Game</span>
+                </h1>
+                
+                <p class="text-sm sm:text-base md:text-lg text-slate-400 max-w-xl leading-relaxed font-light">
+                    Experience next-generation play. Precision console hardware, pro controllers, VR headsets, monitors, storage & physical game cartridges.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 pt-2 w-full sm:w-auto">
+                    <a href="#consoles" class="btn-anim min-h-[48px] inline-flex justify-center items-center px-8 py-3.5 bg-primary text-white font-bold hover:bg-primaryHover uppercase tracking-wider text-xs shadow-glow rounded-lg sm:rounded-none">
+                        Shop Consoles
+                    </a>
+                    <a href="consoles.html" class="btn-anim min-h-[48px] inline-flex justify-center items-center px-8 py-3.5 bg-transparent text-white font-bold hover:bg-white/5 border border-white/20 uppercase tracking-wider text-xs rounded-lg sm:rounded-none">
+                        All 133 Consoles →
+                    </a>
+                </div>
+                
+                <div class="flex items-center justify-center md:justify-start gap-6 sm:gap-8 pt-4 text-slate-500 text-[11px] sm:text-xs uppercase tracking-widest font-semibold">
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-truck-fast text-slate-400"></i> Free Delivery</div>
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-shield-halved text-slate-400"></i> Official Warranty</div>
+                </div>
+            </div>
+
+            <!-- Hero Image -->
+            <div class="w-full md:w-1/2 relative group">
+                <div class="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent transform rotate-3 scale-105 transition-transform duration-700 ease-out group-hover:rotate-6"></div>
+                <div class="img-overlay rounded-xl overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?q=80&w=2070&auto=format&fit=crop" 
+                         alt="Next Generation Gaming Console" 
+                         class="relative z-10 w-full h-auto object-cover grayscale-[30%] contrast-125 hover:grayscale-0 transition-all duration-700 ease-out aspect-[4/3] border border-white/10 shadow-2xl rounded-xl"
+                         loading="eager">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 1: Next-Gen Consoles Showcase -->
+    <section id="consoles" class="py-16 sm:py-24 bg-dark relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-end mb-10 sm:mb-16 gap-6">
+                <div>
+                    <span class="text-primary font-bold text-[11px] uppercase tracking-widest block mb-1">Featured Showcase</span>
+                    <h2 class="font-heading text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-2 uppercase tracking-wider">Next-Gen Consoles</h2>
+                    <p class="text-slate-400 font-light text-sm sm:text-base">Popular consoles in front. PlayStation 5 featured first.</p>
+                </div>
+                <div class="flex flex-wrap gap-2 hide-scrollbar overflow-x-auto pb-2 md:pb-0" id="console-filter-tabs">
+                    <button onclick="filterConsoles('All')" class="px-3.5 py-1.5 border border-white text-white text-[11px] sm:text-xs uppercase tracking-widest font-semibold hover:bg-white hover:text-dark transition-colors c-tab active rounded-md">All Popular</button>
+                    <button onclick="filterConsoles('Sony')" class="px-3.5 py-1.5 border border-white/20 text-slate-400 text-[11px] sm:text-xs uppercase tracking-widest font-semibold hover:border-white/50 hover:text-white transition-colors c-tab rounded-md">PlayStation</button>
+                    <button onclick="filterConsoles('Microsoft')" class="px-3.5 py-1.5 border border-white/20 text-slate-400 text-[11px] sm:text-xs uppercase tracking-widest font-semibold hover:border-white/50 hover:text-white transition-colors c-tab rounded-md">Xbox</button>
+                    <button onclick="filterConsoles('Nintendo')" class="px-3.5 py-1.5 border border-white/20 text-slate-400 text-[11px] sm:text-xs uppercase tracking-widest font-semibold hover:border-white/50 hover:text-white transition-colors c-tab rounded-md">Nintendo</button>
+                    <button onclick="filterConsoles('Handheld')" class="px-3.5 py-1.5 border border-white/20 text-slate-400 text-[11px] sm:text-xs uppercase tracking-widest font-semibold hover:border-white/50 hover:text-white transition-colors c-tab rounded-md">Handheld PCs</button>
+                </div>
+            </div>
+
+            <!-- Product Grid -->
+            <div id="consoles-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
+                <!-- Popular Consoles injected here -->
+            </div>
+
+            <!-- See More Consoles Redirect Button -->
+            <div class="mt-12 sm:mt-16 text-center">
+                <a href="consoles.html" class="btn-anim min-h-[50px] inline-flex justify-center items-center px-8 sm:px-10 py-4 bg-primary hover:bg-primaryHover text-white font-bold uppercase tracking-wider text-xs shadow-glow rounded-lg">
+                    <span>See More Consoles (All 133 Systems)</span>
+                    <i class="fa-solid fa-arrow-right ml-3"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: Pro Accessories & Gear Showcase -->
+    <section id="accessories" class="py-16 sm:py-24 bg-surface border-y border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-end mb-10 sm:mb-16 gap-6">
+                <div>
+                    <h2 class="font-heading text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-2 uppercase tracking-wider">Pro Accessories</h2>
+                    <p class="text-slate-400 font-light text-sm sm:text-base">Controllers, Headsets, VR Headsets, Storage & Charging Gear.</p>
+                </div>
+                <div class="flex flex-wrap gap-2 hide-scrollbar overflow-x-auto pb-2 md:pb-0" id="acc-filter-tabs">
+                    <button onclick="filterAccessories('All')" class="px-3.5 py-1.5 border border-white text-white text-[11px] sm:text-xs uppercase tracking-widest font-semibold hover:bg-white hover:text-dark transition-colors a-tab active rounded-md">All Gear</button>
+                    <button onclick="filterAccessories('Controllers')" class="px-3.5 py-1.5 border border-white/20 text-slate-400 text-[11px] sm:text-xs uppercase tracking-widest font-semibold hover:border-white/50 hover:text-white transition-colors a-tab rounded-md">Controllers</button>
+                    <button onclick="filterAccessories('Headsets')" class="px-3.5 py-1.5 border border-white/20 text-slate-400 text-[11px] sm:text-xs uppercase tracking-widest font-semibold hover:border-white/50 hover:text-white transition-colors a-tab rounded-md">Headsets</button>
+                    <button onclick="filterAccessories('VR')" class="px-3.5 py-1.5 border border-white/20 text-slate-400 text-[11px] sm:text-xs uppercase tracking-widest font-semibold hover:border-white/50 hover:text-white transition-colors a-tab rounded-md">VR Headsets</button>
+                    <button onclick="filterAccessories('Storage')" class="px-3.5 py-1.5 border border-white/20 text-slate-400 text-[11px] sm:text-xs uppercase tracking-widest font-semibold hover:border-white/50 hover:text-white transition-colors a-tab rounded-md">Storage</button>
+                </div>
+            </div>
+
+            <!-- Accessories Grid -->
+            <div id="accessories-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Accessories injected here -->
+            </div>
+
+            <!-- Redirect Buttons -->
+            <div class="mt-12 sm:mt-16 flex flex-col sm:flex-row justify-center gap-4 text-center">
+                <a href="controllers.html" class="btn-anim min-h-[48px] inline-flex justify-center items-center px-8 py-3.5 bg-primary hover:bg-primaryHover text-white font-bold uppercase tracking-wider text-xs shadow-glow rounded-lg">
+                    <span>See More Controllers (11 Pro Pads)</span>
+                    <i class="fa-solid fa-arrow-right ml-2"></i>
+                </a>
+                <a href="headsets.html" class="btn-anim min-h-[48px] inline-flex justify-center items-center px-8 py-3.5 bg-surface hover:bg-surfaceHover border border-white/20 text-white font-bold uppercase tracking-wider text-xs rounded-lg">
+                    <span>See More Headsets & VR (17 Systems)</span>
+                    <i class="fa-solid fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: Console Games & Physical Media Cards (No Load More Button) -->
+    <section id="games" class="py-16 sm:py-24 bg-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 sm:mb-16">
+                <span class="text-primary font-bold text-[11px] uppercase tracking-widest block mb-1">Physical Game Libraries</span>
+                <h2 class="font-heading text-2xl sm:text-4xl md:text-5xl font-bold text-white mb-4 uppercase tracking-wider">Console Games & Discs</h2>
+                <p class="text-slate-400 max-w-2xl mx-auto font-light text-xs sm:text-sm">Explore top physical game releases for PlayStation, Xbox, Nintendo & Retro Consoles.</p>
+            </div>
+
+            <!-- Games Cards Grid -->
+            <div id="games-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                <!-- Game Cards injected here -->
+            </div>
+            
+            <!-- Redirect to Full Games Catalog Page -->
+            <div class="text-center mt-12 sm:mt-16">
+                <a href="games.html" class="btn-anim min-h-[50px] inline-flex justify-center items-center px-8 sm:px-10 py-4 bg-primary hover:bg-primaryHover text-white font-bold uppercase tracking-wider text-xs shadow-glow rounded-lg">
+                    <span>See More Console Games & Cartridges (All 9 Collections)</span>
+                    <i class="fa-solid fa-arrow-right ml-3"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter CTA -->
+    <section class="py-16 sm:py-24 bg-surface border-y border-white/5 relative overflow-hidden">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-3xl h-64 bg-primary/5 blur-[100px] rounded-full pointer-events-none"></div>
+        
+        <div class="max-w-3xl mx-auto px-4 relative z-10 text-center">
+            <h2 class="font-heading text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 uppercase tracking-wider">Join The Elite</h2>
+            <p class="text-slate-400 mb-8 sm:mb-10 font-light text-xs sm:text-sm">Subscribe for exclusive intel on console drops, restricted titles, and premium access.</p>
+            
+            <form class="flex flex-col sm:flex-row max-w-lg mx-auto gap-3 sm:gap-4" onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+                <input type="email" placeholder="Enter your email address" class="flex-grow px-5 py-3.5 focus:outline-none focus:border-primary bg-dark text-white placeholder-slate-600 border border-white/10 transition-colors text-sm rounded-lg sm:rounded-none" required>
+                <button type="submit" class="btn-anim min-h-[48px] bg-primary text-white text-xs uppercase tracking-widest font-semibold px-8 py-3.5 hover:bg-primaryHover rounded-lg sm:rounded-none">
+                    Initialize
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Cart Drawer Modal -->
+    <div id="cart-drawer" class="fixed inset-0 z-[100] bg-black/80 backdrop-blur-md hidden items-center justify-center p-4">
+        <div class="bg-surface border border-white/10 max-w-md w-full p-6 relative rounded-xl">
+            <button onclick="openPayUCheckout()" class="absolute top-4 right-4 text-slate-400 hover:text-white text-lg p-2 min-h-[44px] min-w-[44px] flex items-center justify-center">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <h3 class="font-heading font-bold text-xl text-white uppercase tracking-wider mb-4">Your Cart</h3>
+            <div id="cart-items" class="max-h-60 overflow-y-auto space-y-3 mb-4 text-sm text-slate-300">
+                <!-- Cart items -->
+            </div>
+            <div class="border-t border-white/10 pt-4 flex justify-between items-center text-white font-bold mb-4">
+                <span>Total Amount:</span>
+                <span id="cart-total-val" class="text-primary text-xl">₹0</span>
+            </div>
+            <button onclick="alert('Checkout completed! Thank you.'); cartList = []; updateCart(); openPayUCheckout();" class="w-full py-3.5 bg-primary hover:bg-primaryHover text-white font-semibold uppercase text-xs tracking-widest rounded-lg">Checkout Now</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-slate-400 pt-16 pb-10 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+                <div class="space-y-4">
+                    <span class="font-heading font-bold text-2xl tracking-widest text-white uppercase block">
+                        WARAX<span class="text-primary">GAMING</span>
+                    </span>
+                    <p class="text-xs font-light leading-relaxed">The ultimate destination for gaming consoles, controllers, VR, headsets, monitors, storage & physical game cartridges.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-heading font-bold mb-4 uppercase text-xs tracking-widest">Navigation</h4>
+                    <ul class="space-y-2 text-xs font-light">
+                        <li><a href="#consoles" class="hover:text-white transition-colors">PlayStation 5 & Xbox</a></li>
+                        <li><a href="consoles.html" class="hover:text-white transition-colors text-primary font-semibold">All 133 Consoles Page</a></li>
+                        <li><a href="#accessories" class="hover:text-white transition-colors">Pro Accessories & VR</a></li>
+                        <li><a href="#games" class="hover:text-white transition-colors">Physical Console Games</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-heading font-bold mb-4 uppercase text-xs tracking-widest">Support</h4>
+                    <ul class="space-y-2 text-xs font-light">
+                        <li><a href="#" class="hover:text-white transition-colors">Command Center</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Track Shipment</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Warranty & Logistics</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-heading font-bold mb-4 uppercase text-xs tracking-widest">Comms</h4>
+                    <ul class="space-y-3 text-xs font-light">
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-phone text-slate-500"></i> +91 (800) 123-4567</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-envelope text-slate-500"></i> support@waraxgaming.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs font-light">
+                <p>&copy; 2026 WARAX GAMING Store. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Products Dataset Script -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="products.js"></script>
+    <script src="payu-checkout.js"></script>
+
+    <!-- App Logic Script -->
+    <script>
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                navbar.classList.add('bg-dark/95', 'shadow-2xl');
+                navbar.classList.remove('bg-dark/90');
+            } else {
+                navbar.classList.remove('bg-dark/95', 'shadow-2xl');
+                navbar.classList.add('bg-dark/90');
+            }
+        });
+
+        let isMenuOpen = false;
+        function toggleMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIcon = document.getElementById('menu-icon');
+            isMenuOpen = !isMenuOpen;
+            if (isMenuOpen) {
+                mobileMenu.classList.remove('hidden');
+                menuIcon.className = 'fa-solid fa-xmark text-xl';
+            } else {
+                mobileMenu.classList.add('hidden');
+                menuIcon.className = 'fa-solid fa-bars text-xl';
+            }
+        }
+
+        
+
+        document.addEventListener('DOMContentLoaded', () => {
+            renderConsoles('All');
+            renderAccessories('All');
+            renderGamesCards();
+        });
+
+        // 1. Render Consoles
+        function renderConsoles(filterBrand) {
+            const container = document.getElementById('consoles-container');
+            if (!container) return;
+
+            let list = PRODUCTS_DATA.filter(p => p.sheetCategory === 'Consoles');
+            if (filterBrand !== 'All') {
+                if (filterBrand === 'Handheld') {
+                    list = list.filter(p => p.type && p.type.includes('Handheld'));
+                } else {
+                    list = list.filter(p => p.brand === filterBrand);
+                }
+            }
+
+            container.innerHTML = list.slice(0, 6).map(item => `
+                <div class="snap-center shrink-0 w-[85vw] sm:w-auto bg-surface border border-white/5 hover-lift flex flex-col group p-5 sm:p-6 rounded-xl cursor-pointer" onclick="window.location.href='product-${item.id}.html'">
+                    <div class="relative bg-dark/50 overflow-hidden aspect-square flex items-center justify-center mb-5 img-overlay rounded-lg">
+                        <img src="${item.image}" alt="${item.name}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out mix-blend-luminosity group-hover:mix-blend-normal" loading="lazy">
+                        ${item.badge ? `<div class="absolute top-3 left-3 bg-primary px-2.5 py-0.5 text-[9px] font-bold text-white uppercase tracking-widest z-10 rounded">${item.badge}</div>` : ''}
+                        ${item.discount ? `<div class="absolute top-3 right-3 bg-green-600 text-white text-[9px] font-bold px-2 py-0.5 rounded z-10">${item.discount}% OFF</div>` : ''}
+                    </div>
+                    <div class="flex-grow flex flex-col">
+                        <h3 class="font-heading font-semibold text-lg sm:text-xl text-white mb-2 tracking-wide line-clamp-1">${item.name}</h3>
+                        <p class="text-xs sm:text-sm text-slate-400 mb-5 font-light line-clamp-2">${item.compatibility || 'Next-generation gaming hardware'}.</p>
+                        <div class="mt-auto flex items-center justify-between border-t border-white/5 pt-5">
+                            <div>
+                                <span class="font-heading font-bold text-lg sm:text-2xl text-white">₹${item.price.toLocaleString('en-IN')}</span>
+                                ${item.originalPrice ? `<span class="text-slate-500 line-through text-xs ml-2">₹${item.originalPrice.toLocaleString('en-IN')}</span>` : ''}
+                            </div>
+                            <button onclick="event.stopPropagation(); addToCart(${item.id})" class="btn-anim bg-white/5 border border-white/10 text-white w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center hover:bg-primary hover:border-primary transition-colors rounded-lg" aria-label="Add to cart">
+                                <i class="fa-solid fa-plus text-xs sm:text-sm"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function filterConsoles(brand) {
+            renderConsoles(brand);
+        }
+
+        // 2. Render Accessories
+        function renderAccessories(category) {
+            const container = document.getElementById('accessories-container');
+            if (!container) return;
+
+            let list = PRODUCTS_DATA.filter(p => ['Controllers', 'Headsets', 'VR', 'Storage', 'Power & Charging', 'Cases & Stands', 'Accessories'].includes(p.sheetCategory));
+            if (category !== 'All') {
+                list = list.filter(p => p.sheetCategory === category);
+            }
+
+            container.innerHTML = list.slice(0, 8).map(item => `
+                <div class="bg-dark border border-white/5 p-4 hover-lift group rounded-xl flex flex-col justify-between cursor-pointer" onclick="window.location.href='product-${item.id}.html'">
+                    <div>
+                        <div class="aspect-square bg-black overflow-hidden mb-4 relative rounded-lg">
+                            <img src="${item.image}" alt="${item.name}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out opacity-80 group-hover:opacity-100" loading="lazy">
+                            ${item.discount ? `<div class="absolute top-2 left-2 bg-green-600 text-white text-[9px] font-bold px-1.5 py-0.5 rounded">${item.discount}% OFF</div>` : ''}
+                        </div>
+                        <span class="text-[10px] text-primary font-bold uppercase tracking-wider block mb-1">${item.brand} • ${item.sheetCategory}</span>
+                        <h3 class="font-heading font-semibold text-white text-sm sm:text-base tracking-wide line-clamp-1">${item.name}</h3>
+                    </div>
+                    <div class="flex justify-between items-center mt-4 border-t border-white/5 pt-3">
+                        <div>
+                            <span class="font-heading font-bold text-base sm:text-lg text-slate-300">₹${item.price.toLocaleString('en-IN')}</span>
+                            ${item.originalPrice ? `<span class="text-slate-500 line-through text-xs ml-1">₹${item.originalPrice.toLocaleString('en-IN')}</span>` : ''}
+                        </div>
+                        <button onclick="event.stopPropagation(); addToCart(${item.id})" class="text-slate-400 hover:text-white transition-colors p-2 min-h-[40px] min-w-[40px] flex items-center justify-center"><i class="fa-solid fa-cart-plus text-base"></i></button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function filterAccessories(cat) {
+            renderAccessories(cat);
+        }
+
+        // 3. Render Game Cards in Games Section (No Load More Button)
+        function renderGamesCards() {
+            const container = document.getElementById('games-container');
+            if (!container) return;
+
+            const games = PRODUCTS_DATA.filter(p => p.sheetCategory === 'Games');
+
+            container.innerHTML = games.map(item => `
+                <div class="bg-surface border border-white/10 hover-lift p-6 rounded-xl flex flex-col justify-between group cursor-pointer" onclick="window.location.href='games.html?platform=${encodeURIComponent(item.compatibility)}'">
+                    <div>
+                        <div class="relative bg-dark/60 rounded-lg overflow-hidden mb-4 img-overlay aspect-[16/9]">
+                            <img src="${item.image}" alt="${item.name}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            ${item.badge ? `<div class="absolute top-3 left-3 bg-primary text-white text-[9px] font-bold px-2.5 py-0.5 rounded uppercase tracking-wider z-10">${item.badge}</div>` : ''}
+                            ${item.discount ? `<div class="absolute top-3 right-3 bg-green-600 text-white text-[9px] font-bold px-2 py-0.5 rounded z-10">${item.discount}% OFF</div>` : ''}
+                        </div>
+                        <span class="text-[10px] text-primary font-bold uppercase tracking-widest block mb-1">${item.brand} • ${item.compatibility}</span>
+                        <h3 class="font-heading font-bold text-white text-lg mb-2 tracking-wide">${item.name}</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">${item.description || 'Top physical games and steelbooks.'}</p>
+                    </div>
+                    <div class="pt-4 border-t border-white/5 flex justify-between items-center mt-auto">
+                        <div>
+                            <span class="font-heading font-bold text-xl text-white">From ₹${item.price.toLocaleString('en-IN')}</span>
+                            ${item.originalPrice ? `<span class="text-slate-500 line-through text-xs ml-2">₹${item.originalPrice.toLocaleString('en-IN')}</span>` : ''}
+                        </div>
+                        <span class="text-primary text-xs font-bold uppercase tracking-widest">Browse Games <i class="fa-solid fa-arrow-right ml-1"></i></span>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Search logic
+        function handleSearch(e) {
+            const q = e.target.value.toLowerCase().trim();
+            if (!q) return;
+            const container = document.getElementById('games-container');
+            if (!container) return;
+
+            const results = PRODUCTS_DATA.filter(p => p.name.toLowerCase().includes(q) || p.brand.toLowerCase().includes(q) || p.sheetCategory.toLowerCase().includes(q));
+            container.innerHTML = results.slice(0, 9).map(item => `
+                <div class="bg-surface border border-white/10 hover-lift p-6 rounded-xl flex flex-col justify-between group">
+                    <div>
+                        <div class="relative bg-dark/60 rounded-lg overflow-hidden mb-4 img-overlay aspect-[16/9]">
+                            <img src="${item.image}" alt="${item.name}" class="w-full h-full object-cover">
+                        </div>
+                        <span class="text-[10px] text-primary font-bold uppercase tracking-widest block mb-1">${item.brand} • ${item.sheetCategory}</span>
+                        <h3 class="font-heading font-bold text-white text-lg mb-2 tracking-wide">${item.name}</h3>
+                    </div>
+                    <div class="pt-4 border-t border-white/5 flex justify-between items-center mt-auto">
+                        <span class="font-heading font-bold text-xl text-white">₹${item.price.toLocaleString('en-IN')}</span>
+                        <button onclick="addToCart(${item.id})" class="bg-primary hover:bg-primaryHover text-white px-4 py-2 text-xs font-bold uppercase tracking-wider rounded-lg"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        </script>
+</body>
+</html>

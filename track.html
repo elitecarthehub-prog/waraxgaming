@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Track Order & Package | WARAX GAMING</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { heading: ['Montserrat', 'sans-serif'], body: ['Inter', 'sans-serif'] },
+                    colors: { primary: '#991b1b', primaryHover: '#7f1d1d', dark: '#09090b', surface: '#18181b', surfaceHover: '#27272a' },
+                    boxShadow: { 'glow': '0 0 40px -10px rgba(153, 27, 27, 0.4)' }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .pulse-badge { animation: pulseGlow 2s ease-in-out infinite; }
+        @keyframes pulseGlow { 0%, 100% { opacity: 1; } 50% { opacity: 0.6; } }
+    </style>
+</head>
+<body class="font-body bg-dark text-slate-300 antialiased selection:bg-primary selection:text-white min-h-screen flex flex-col">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full top-0 z-50 bg-dark/95 backdrop-blur-lg border-b border-white/5 h-16 sm:h-20 flex items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex justify-between items-center">
+            <a href="index.html" class="font-heading font-bold text-xl sm:text-2xl tracking-widest text-white uppercase">
+                WARAX<span class="text-primary">GAMING</span>
+            </a>
+            <div class="flex items-center gap-4 sm:gap-6">
+                <a href="index.html" class="text-slate-400 hover:text-white text-xs sm:text-sm font-semibold uppercase tracking-wider flex items-center gap-2">
+                    <i class="fa-solid fa-arrow-left"></i> <span class="hidden sm:inline">Main Store</span>
+                </a>
+                
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-24 sm:pt-32 pb-16 flex-grow">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+            
+            <!-- Page Title -->
+            <div class="text-center space-y-2">
+                <span class="text-primary font-bold text-xs uppercase tracking-widest block">Live Shipment Tracking</span>
+                <h1 class="font-heading font-black text-3xl sm:text-4xl text-white tracking-tight uppercase">Track Your Order Status</h1>
+                <p class="text-slate-400 text-xs sm:text-sm max-w-lg mx-auto">Enter your AWB Tracking Number (WRX-TRK-...), Order ID (ORD-...), or Mobile Number to view live dispatch status.</p>
+            </div>
+
+            <!-- Search Form Card -->
+            <div class="bg-surface border border-white/10 rounded-2xl p-6 shadow-xl">
+                <form onsubmit="event.preventDefault(); trackOrder();" class="flex flex-col sm:flex-row gap-3">
+                    <div class="relative flex-grow">
+                        <input type="text" id="track-input" placeholder="Enter AWB Code (WRX-TRK-...) or Order ID / Phone..." 
+                               class="w-full bg-dark border border-white/10 rounded-xl py-3.5 pl-11 pr-4 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-primary uppercase font-mono">
+                        <i class="fa-solid fa-truck-fast absolute left-4 top-4 text-slate-500 text-xs"></i>
+                    </div>
+                    <button type="submit" class="px-8 py-3.5 bg-primary hover:bg-primaryHover text-white font-bold text-xs uppercase tracking-widest rounded-xl flex items-center justify-center gap-2 shadow-glow">
+                        <i class="fa-solid fa-magnifying-glass"></i> Track Shipment
+                    </button>
+                </form>
+            </div>
+
+            <!-- Tracking Result Section -->
+            <div id="tracking-result-container">
+                <!-- Dynamically populated -->
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-slate-400 py-10 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs">
+            <span class="font-heading font-bold text-white uppercase tracking-widest">WARAX<span class="text-primary">GAMING</span></span>
+            <span>&copy; 2026 WARAX GAMING • All Rights Reserved</span>
+            
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const awb = urlParams.get('awb') || urlParams.get('id');
+            if (awb) {
+                document.getElementById('track-input').value = awb;
+                trackOrder(awb);
+            } else {
+                // Auto track last order if available
+                const lastOrder = JSON.parse(localStorage.getItem('warax_last_order'));
+                if (lastOrder && lastOrder.awb) {
+                    document.getElementById('track-input').value = lastOrder.awb;
+                    trackOrder(lastOrder.awb);
+                }
+            }
+        });
+
+        function trackOrder(query = null) {
+            const inputVal = (query || document.getElementById('track-input').value).trim().toUpperCase();
+            const container = document.getElementById('tracking-result-container');
+
+            if (!inputVal) {
+                container.innerHTML = `
+                    <div class="bg-surface border border-white/10 rounded-2xl p-8 text-center text-slate-500 space-y-2">
+                        <i class="fa-solid fa-search text-3xl"></i>
+                        <p class="text-xs">Please enter an AWB tracking number or Order ID to search.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            const allOrders = JSON.parse(localStorage.getItem('warax_orders')) || [];
+            const lastOrder = JSON.parse(localStorage.getItem('warax_last_order'));
+
+            let matchedOrder = allOrders.find(o => 
+                (o.awb && o.awb.toUpperCase() === inputVal) ||
+                (o.orderId && o.orderId.toUpperCase() === inputVal) ||
+                (o.phone && o.phone.includes(inputVal))
+            );
+
+            if (!matchedOrder && lastOrder) {
+                if ((lastOrder.awb && lastOrder.awb.toUpperCase() === inputVal) ||
+                    (lastOrder.orderId && lastOrder.orderId.toUpperCase() === inputVal) ||
+                    (lastOrder.phone && lastOrder.phone.includes(inputVal))) {
+                    matchedOrder = lastOrder;
+                }
+            }
+
+            if (!matchedOrder) {
+                container.innerHTML = `
+                    <div class="bg-surface border border-white/10 rounded-2xl p-10 text-center space-y-4">
+                        <div class="w-14 h-14 rounded-full bg-red-500/20 text-primary border border-primary/40 flex items-center justify-center text-2xl mx-auto">
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+                        </div>
+                        <h3 class="font-heading font-bold text-white text-xl">Shipment Not Found</h3>
+                        <p class="text-slate-400 text-xs max-w-md mx-auto">No order or AWB number matches <span class="font-mono text-white font-bold">${inputVal}</span>. Please check your tracking number and try again.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            const stages = ['Ordered', 'Shipped', 'Out for Delivery', 'Delivered'];
+            const currentStageIndex = stages.indexOf(matchedOrder.status) !== -1 ? stages.indexOf(matchedOrder.status) : 0;
+
+            const html = `
+                <div class="bg-surface border border-white/10 rounded-2xl p-6 sm:p-10 space-y-8 shadow-2xl">
+                    
+                    <!-- Header Info -->
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 border-b border-white/10 pb-6">
+                        <div>
+                            <span class="text-[10px] text-slate-500 font-bold uppercase tracking-wider block">AWB Tracking Code</span>
+                            <span class="font-mono font-black text-xl text-green-400">${matchedOrder.awb || 'WRX-TRK-784920'}</span>
+                        </div>
+                        <div class="text-left sm:text-right">
+                            <span class="text-[10px] text-slate-500 font-bold uppercase tracking-wider block">Order ID</span>
+                            <span class="font-mono font-bold text-sm text-white">${matchedOrder.orderId || 'ORD-982410'}</span>
+                        </div>
+                    </div>
+
+                    <!-- 4-STAGE TIMELINE STEPPER -->
+                    <div class="space-y-4">
+                        <h3 class="font-heading font-bold text-xs uppercase tracking-wider text-slate-400">Live Delivery Timeline</h3>
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-4 gap-4 relative">
+                            
+                            <!-- STAGE 1: ORDERED -->
+                            <div class="p-4 rounded-xl border ${currentStageIndex >= 0 ? 'bg-green-950/30 border-green-500/50' : 'bg-dark/40 border-white/5'} space-y-2">
+                                <div class="flex items-center justify-between">
+                                    <div class="w-8 h-8 rounded-lg ${currentStageIndex >= 0 ? 'bg-green-600 text-white' : 'bg-white/10 text-slate-500'} flex items-center justify-center font-bold text-xs">
+                                        <i class="fa-solid fa-receipt"></i>
+                                    </div>
+                                    <span class="text-[9px] font-bold uppercase px-2 py-0.5 rounded ${currentStageIndex >= 0 ? 'bg-green-500/20 text-green-400' : 'bg-white/5 text-slate-500'}">Step 1</span>
+                                </div>
+                                <h4 class="font-heading font-bold text-white text-xs uppercase">Ordered</h4>
+                                <p class="text-[10px] text-slate-400">Order placed & payment confirmed</p>
+                                ${currentStageIndex === 0 ? `<span class="inline-block text-[9px] font-bold text-green-400 pulse-badge">● Active Stage</span>` : ''}
+                            </div>
+
+                            <!-- STAGE 2: SHIPPED -->
+                            <div class="p-4 rounded-xl border ${currentStageIndex >= 1 ? 'bg-green-950/30 border-green-500/50' : 'bg-dark/40 border-white/5'} space-y-2">
+                                <div class="flex items-center justify-between">
+                                    <div class="w-8 h-8 rounded-lg ${currentStageIndex >= 1 ? 'bg-green-600 text-white' : 'bg-white/10 text-slate-500'} flex items-center justify-center font-bold text-xs">
+                                        <i class="fa-solid fa-box font-bold"></i>
+                                    </div>
+                                    <span class="text-[9px] font-bold uppercase px-2 py-0.5 rounded ${currentStageIndex >= 1 ? 'bg-green-500/20 text-green-400' : 'bg-white/5 text-slate-500'}">Step 2</span>
+                                </div>
+                                <h4 class="font-heading font-bold text-white text-xs uppercase">Shipped</h4>
+                                <p class="text-[10px] text-slate-400">Handed over to Express Courier</p>
+                                ${currentStageIndex === 1 ? `<span class="inline-block text-[9px] font-bold text-green-400 pulse-badge">● Active Stage</span>` : ''}
+                            </div>
+
+                            <!-- STAGE 3: OUT FOR DELIVERY -->
+                            <div class="p-4 rounded-xl border ${currentStageIndex >= 2 ? 'bg-green-950/30 border-green-500/50' : 'bg-dark/40 border-white/5'} space-y-2">
+                                <div class="flex items-center justify-between">
+                                    <div class="w-8 h-8 rounded-lg ${currentStageIndex >= 2 ? 'bg-green-600 text-white' : 'bg-white/10 text-slate-500'} flex items-center justify-center font-bold text-xs">
+                                        <i class="fa-solid fa-truck-fast"></i>
+                                    </div>
+                                    <span class="text-[9px] font-bold uppercase px-2 py-0.5 rounded ${currentStageIndex >= 2 ? 'bg-green-500/20 text-green-400' : 'bg-white/5 text-slate-500'}">Step 3</span>
+                                </div>
+                                <h4 class="font-heading font-bold text-white text-xs uppercase">Out for Delivery</h4>
+                                <p class="text-[10px] text-slate-400">Agent out for delivery at destination</p>
+                                ${currentStageIndex === 2 ? `<span class="inline-block text-[9px] font-bold text-green-400 pulse-badge">● Active Stage</span>` : ''}
+                            </div>
+
+                            <!-- STAGE 4: DELIVERED -->
+                            <div class="p-4 rounded-xl border ${currentStageIndex >= 3 ? 'bg-green-950/30 border-green-500/50' : 'bg-dark/40 border-white/5'} space-y-2">
+                                <div class="flex items-center justify-between">
+                                    <div class="w-8 h-8 rounded-lg ${currentStageIndex >= 3 ? 'bg-green-600 text-white' : 'bg-white/10 text-slate-500'} flex items-center justify-center font-bold text-xs">
+                                        <i class="fa-solid fa-house-circle-check"></i>
+                                    </div>
+                                    <span class="text-[9px] font-bold uppercase px-2 py-0.5 rounded ${currentStageIndex >= 3 ? 'bg-green-500/20 text-green-400' : 'bg-white/5 text-slate-500'}">Step 4</span>
+                                </div>
+                                <h4 class="font-heading font-bold text-white text-xs uppercase">Delivered</h4>
+                                <p class="text-[10px] text-slate-400">Package delivered to recipient</p>
+                                ${currentStageIndex === 3 ? `<span class="inline-block text-[9px] font-bold text-green-400 pulse-badge">● Order Completed</span>` : ''}
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Customer & Address Summary -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 bg-dark/50 p-5 rounded-xl border border-white/5 text-xs">
+                        <div>
+                            <span class="text-[10px] text-slate-500 font-bold uppercase tracking-wider block mb-1">Customer Contact</span>
+                            <p class="font-bold text-white">${matchedOrder.customerName}</p>
+                            <p class="text-slate-400">${matchedOrder.phone} • ${matchedOrder.email}</p>
+                        </div>
+                        <div>
+                            <span class="text-[10px] text-slate-500 font-bold uppercase tracking-wider block mb-1">Delivery Address</span>
+                            <p class="text-slate-300 leading-relaxed">${matchedOrder.address}</p>
+                        </div>
+                    </div>
+
+                    <!-- Itemized Items List -->
+                    <div class="space-y-3">
+                        <h4 class="font-heading font-bold text-xs uppercase tracking-wider text-slate-400">Order Items</h4>
+                        <div class="divide-y divide-white/5">
+                            ${matchedOrder.items.map(item => `
+                                <div class="py-3 flex justify-between items-center text-xs">
+                                    <div class="flex items-center gap-3">
+                                        <img src="${item.image}" alt="${item.name}" class="w-10 h-10 object-contain bg-dark rounded p-1">
+                                        <div>
+                                            <span class="font-heading font-bold text-white block">${item.name}</span>
+                                            <span class="text-slate-500">Qty: ${item.qty} × ₹${item.price.toLocaleString('en-IN')}</span>
+                                        </div>
+                                    </div>
+                                    <span class="font-heading font-bold text-white">₹${(item.price * item.qty).toLocaleString('en-IN')}</span>
+                                </div>
+                            `).join('')}
+                        </div>
+                        <div class="pt-3 border-t border-white/10 flex justify-between items-center text-sm font-bold">
+                            <span class="text-white uppercase">Total Paid</span>
+                            <span class="text-primary font-black text-xl">₹${matchedOrder.amount.toLocaleString('en-IN')}</span>
+                        </div>
+                    </div>
+
+                </div>
+            `;
+
+            container.innerHTML = html;
+        }
+    </script>
+</body>
+</html>
