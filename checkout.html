@@ -313,6 +313,7 @@
             TELEGRAM_CHAT_ID   : "-1003888838712",
 
             SECRET_PROMO   : "WARAX100",
+            SECRET_TEST_PROMO : "OWNERTESTWARAX001"
             PUBLIC_COUPONS : {
                 "WARAX10" : 10,
                 "SAVE20"  : 20,
@@ -398,6 +399,14 @@
                 renderSummary();
                 return;
             }
+
+            if (code === CONFIG.SECRET_TEST_PROMO) {
+    discount = Math.max(0, subtotal - 1);
+    couponApplied = true;
+    showCouponMsg(`TEST COUPON APPLIED — Total reduced to ₹1`, true);
+    renderSummary();
+    return;
+}
 
             const pct = CONFIG.PUBLIC_COUPONS[code];
             if (pct) {
