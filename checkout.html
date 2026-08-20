@@ -586,6 +586,15 @@
                 }
             } else if (status === "failure") {
                 alert("Payment processing failed or was cancelled. Please try again.");
+                const pendingOrder = JSON.parse(localStorage.getItem("pendingOrder") || "null");
+                if (pendingOrder) {
+                    let allOrders = JSON.parse(localStorage.getItem('warax_orders')) || [];
+                    const targetId = pendingOrder.orderId || pendingOrder.txnid;
+                    allOrders = allOrders.filter(o => o.orderId !== targetId && o.txnid !== targetId);
+                    localStorage.setItem('warax_orders', JSON.stringify(allOrders));
+                    localStorage.removeItem('pendingOrder');
+                    localStorage.removeItem('warax_last_order');
+                }
             }
         }
 
