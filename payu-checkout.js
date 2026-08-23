@@ -38,6 +38,16 @@ function addToCart(productId, openDrawer = true) {
     }
     saveCart();
 
+    if (typeof fbq === 'function') {
+        fbq('track', 'AddToCart', {
+            content_ids: [String(p.id)],
+            content_name: p.name,
+            content_type: 'product',
+            value: p.price,
+            currency: 'INR'
+        });
+    }
+
     if (openDrawer) {
         openCartDrawer();
     }

@@ -29,6 +29,23 @@
         .badge-pulse { animation: badgePulse 2s ease-in-out infinite; }
         @keyframes badgePulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.7; } }
     </style>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1596400438741187');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1596400438741187&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 </head>
 <body class="font-body bg-dark text-slate-300 antialiased selection:bg-primary selection:text-white min-h-screen flex flex-col">
 
@@ -107,6 +124,16 @@
             }
 
             document.title = `${p.name} | WARAX GAMING`;
+
+            if (typeof fbq === 'function') {
+                fbq('track', 'ViewContent', {
+                    content_ids: [String(p.id)],
+                    content_name: p.name,
+                    content_type: 'product',
+                    value: p.price,
+                    currency: 'INR'
+                });
+            }
 
             const origPrice = p.originalPrice || p.price;
             const discount = p.discount || 0;

@@ -27,6 +27,23 @@
             .print-text { color: black !important; }
         }
     </style>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1596400438741187');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1596400438741187&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 </head>
 <body class="font-body bg-dark text-slate-300 antialiased min-h-screen flex flex-col">
 
@@ -147,6 +164,18 @@
             document.getElementById('order-customer').innerText = `${orderData.customerName} (${orderData.phone} • ${orderData.email})`;
             document.getElementById('order-address').innerText = orderData.address;
             document.getElementById('order-total').innerText = `₹${orderData.amount.toLocaleString('en-IN')}`;
+
+            if (typeof fbq === 'function') {
+                const itemIds = orderData.items ? orderData.items.map(i => String(i.id)) : [];
+                const numItems = orderData.items ? orderData.items.reduce((sum, item) => sum + item.qty, 0) : 1;
+                fbq('track', 'Purchase', {
+                    content_ids: itemIds,
+                    content_type: 'product',
+                    value: parseFloat(orderData.amount) || 0,
+                    currency: 'INR',
+                    num_items: numItems
+                });
+            }
 
             document.getElementById('btn-track-order').href = `track.html?awb=${awb}`;
 
