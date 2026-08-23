@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Payment Failed | WARAX GAMING</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { heading: ['Montserrat', 'sans-serif'], body: ['Inter', 'sans-serif'] },
+                    colors: { primary: '#991b1b', primaryHover: '#7f1d1d', dark: '#09090b', surface: '#18181b' }
+                }
+            }
+        }
+    </script>
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1596400438741187');
+    fbq('track', 'PageView');
+    fbq('trackCustom', 'PaymentFailed');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1596400438741187&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+</head>
+<body class="font-body bg-dark text-slate-300 antialiased min-h-screen flex flex-col">
+
+    <!-- Navbar -->
+    <nav class="bg-dark/95 border-b border-white/5 h-20 flex items-center">
+        <div class="max-w-4xl mx-auto px-4 w-full flex justify-between items-center">
+            <a href="index.html" class="font-heading font-bold text-xl tracking-widest text-white uppercase">
+                WARAX<span class="text-primary">GAMING</span>
+            </a>
+            <div class="flex items-center gap-4 text-xs font-bold uppercase">
+                <a href="index.html" class="text-slate-400 hover:text-white">Store &rarr;</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content Container -->
+    <main class="py-12 flex-grow">
+        <div class="max-w-3xl mx-auto px-4">
+            
+            <div id="order-card" class="bg-surface border border-white/10 rounded-2xl p-6 sm:p-10 space-y-8 shadow-2xl">
+                
+                <!-- Failure Header -->
+                <div class="text-center space-y-3 border-b border-white/10 pb-8">
+                    <div class="w-16 h-16 rounded-full bg-red-500/20 border-2 border-red-500 flex items-center justify-center text-red-500 text-3xl mx-auto">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <h1 class="font-heading font-black text-2xl sm:text-3xl text-white uppercase tracking-tight">Payment Failed</h1>
+                    <p class="text-xs text-slate-400">We could not process your transaction. The payment was either cancelled or declined by the gateway.</p>
+                </div>
+
+                <!-- Transaction Details -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 bg-dark/50 p-5 rounded-xl border border-white/5">
+                    <div>
+                        <span class="text-[10px] text-slate-500 font-bold uppercase tracking-wider block">Order Reference ID</span>
+                        <span id="order-txnid" class="font-mono text-xs text-white font-bold">-</span>
+                    </div>
+                    <div>
+                        <span class="text-[10px] text-slate-500 font-bold uppercase tracking-wider block">Transaction Status</span>
+                        <span class="inline-block bg-red-500/20 text-red-400 font-bold text-[10px] px-2.5 py-0.5 rounded uppercase">❌ Unpaid / Failed</span>
+                    </div>
+                    <div>
+                        <span class="text-[10px] text-slate-500 font-bold uppercase tracking-wider block">Payment Gateway</span>
+                        <span class="font-heading font-bold text-xs text-white">PayU Secure Gateway</span>
+                    </div>
+                    <div>
+                        <span class="text-[10px] text-slate-500 font-bold uppercase tracking-wider block">Customer Name</span>
+                        <span id="order-customer" class="font-heading font-bold text-xs text-white">-</span>
+                    </div>
+                </div>
+
+                <!-- Failed Items Summary (if available) -->
+                <div id="failed-items-section" class="space-y-4 hidden">
+                    <h3 class="font-heading font-bold text-white text-xs uppercase tracking-wider">Attempted Order Items</h3>
+                    <div id="order-items-list" class="divide-y divide-white/5">
+                        <!-- Populated dynamically -->
+                    </div>
+                    <div class="pt-4 border-t border-white/10 flex justify-between items-center">
+                        <span class="font-heading font-bold text-white text-sm uppercase">Total Amount</span>
+                        <span id="order-total" class="font-heading font-black text-2xl text-primary">₹0</span>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="pt-6 border-t border-white/10 flex flex-col sm:flex-row gap-4">
+                    <a href="checkout.html" class="flex-1 py-3.5 bg-primary hover:bg-primaryHover text-white font-bold text-xs uppercase tracking-widest rounded-xl text-center flex items-center justify-center gap-2 transition shadow-lg">
+                        <i class="fa-solid fa-rotate-right"></i> Retry Payment & Checkout
+                    </a>
+                    <a href="index.html" class="flex-1 py-3.5 bg-white/10 hover:bg-white/20 text-white font-bold text-xs uppercase tracking-widest rounded-xl text-center transition">
+                        Back to Home &rarr;
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-dark text-slate-500 py-6 text-center text-xs border-t border-white/5 space-y-1">
+        <p>&copy; 2026 WARAX GAMING • Express All-India Free Shipping</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const pendingOrder = JSON.parse(localStorage.getItem('pendingOrder') || 'null');
+            
+            if (pendingOrder) {
+                // Display failed order details
+                document.getElementById('order-txnid').innerText = pendingOrder.orderId || pendingOrder.txnid || 'N/A';
+                document.getElementById('order-customer').innerText = `${pendingOrder.firstName || ''} ${pendingOrder.lastName || ''}`.trim() || '-';
+                
+                if (pendingOrder.items && pendingOrder.items.length > 0) {
+                    document.getElementById('failed-items-section').classList.remove('hidden');
+                    document.getElementById('order-total').innerText = `₹${Number(pendingOrder.amount).toLocaleString('en-IN')}`;
+                    
+                    const list = document.getElementById('order-items-list');
+                    list.innerHTML = pendingOrder.items.map(item => `
+                        <div class="py-3 flex justify-between items-center text-xs">
+                            <div class="flex items-center gap-3">
+                                <img src="${item.image}" alt="${item.name}" class="w-10 h-10 object-contain bg-dark rounded p-1">
+                                <div>
+                                    <span class="font-heading font-bold text-white block">${item.name}</span>
+                                    <span class="text-slate-500">Qty: ${item.qty} × ₹${item.price.toLocaleString('en-IN')}</span>
+                                </div>
+                            </div>
+                            <span class="font-heading font-bold text-white">₹${(item.price * item.qty).toLocaleString('en-IN')}</span>
+                        </div>
+                    `).join('');
+                }
+
+                // CLEANUP: Remove this pending order from allOrders list in localStorage so it doesn't show up in Admin Panel
+                let allOrders = JSON.parse(localStorage.getItem('warax_orders')) || [];
+                const targetId = pendingOrder.orderId || pendingOrder.txnid;
+                allOrders = allOrders.filter(o => o.orderId !== targetId && o.txnid !== targetId);
+                localStorage.setItem('warax_orders', JSON.stringify(allOrders));
+
+                // Clear temporary order tags
+                localStorage.removeItem('pendingOrder');
+                localStorage.removeItem('warax_last_order');
+            } else {
+                document.getElementById('order-txnid').innerText = 'N/A';
+                document.getElementById('order-customer').innerText = 'Guest';
+            }
+        });
+    </script>
+</body>
+</html>

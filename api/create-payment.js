@@ -67,6 +67,6 @@ export default async function handler(req, res) {
     amount      : formattedAmount,
     hash,
     surl        : `${protocol}://${host}/api/success`,
-    furl        : "https://waraxgaming.store/checkout.html?status=failure"
+    furl        : "https://waraxgaming.store/payment-failed.html"
   });
 }

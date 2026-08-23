@@ -48,10 +48,10 @@ export default async function handler(req, res) {
       return res.redirect(302, "https://waraxgaming.store/checkout.html?status=success");
     }
 
-    return res.redirect(302, "https://waraxgaming.store/checkout.html?status=failure");
+    return res.redirect(302, "https://waraxgaming.store/payment-failed.html");
 
   } catch (err) {
     console.error("SUCCESS API ERROR:", err);
-    return res.redirect(302, "https://waraxgaming.store/checkout.html?status=failure");
+    return res.redirect(302, "https://waraxgaming.store/payment-failed.html");
   }
 }
