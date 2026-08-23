@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Order Confirmation & Invoice | WARAX GAMING</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { heading: ['Montserrat', 'sans-serif'], body: ['Inter', 'sans-serif'] },
+                    colors: { primary: '#991b1b', dark: '#09090b', surface: '#18181b' }
+                }
+            }
+        }
+    </script>
+    <style>
+        @media print {
+            body { background: white !important; color: black !important; }
+            .no-print { display: none !important; }
+            .print-card { border: 1px solid #ccc !important; box-shadow: none !important; background: white !important; color: black !important; }
+            .print-text { color: black !important; }
+        }
+    </style>
+</head>
+<body class="font-body bg-dark text-slate-300 antialiased min-h-screen flex flex-col">
+
+    <!-- Navbar -->
+    <nav class="no-print bg-dark/95 border-b border-white/5 h-20 flex items-center">
+        <div class="max-w-4xl mx-auto px-4 w-full flex justify-between items-center">
+            <a href="index.html" class="font-heading font-bold text-xl tracking-widest text-white uppercase">
+                WARAX<span class="text-primary">GAMING</span>
+            </a>
+            <div class="flex items-center gap-4 text-xs font-bold uppercase">
+                <a href="track.html" class="text-green-400 hover:text-white flex items-center gap-1.5"><i class="fa-solid fa-truck-fast"></i> Live Tracking</a>
+                <span>|</span>
+                <a href="index.html" class="text-slate-400 hover:text-white">Store &rarr;</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content Container -->
+    <main class="py-12 flex-grow">
+        <div class="max-w-3xl mx-auto px-4">
+            
+            <div id="order-card" class="bg-surface border border-white/10 rounded-2xl p-6 sm:p-10 space-y-8 shadow-2xl print-card">
+                
+                <!-- Success Header -->
+                <div class="text-center space-y-3 border-b border-white/10 pb-8">
+                    <div class="w-16 h-16 rounded-full bg-green-500/20 border-2 border-green-500 flex items-center justify-center text-green-400 text-3xl mx-auto">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <h1 class="font-heading font-black text-2xl sm:text-3xl text-white print-text uppercase tracking-tight">Order Confirmed!</h1>
+                    <p class="text-xs text-slate-400 print-text">Thank you for your order with WARAX GAMING. Your shipment has been booked with FREE Express Delivery.</p>
+                </div>
+
+                <!-- Transaction Details -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 bg-dark/50 p-5 rounded-xl border border-white/5 print-card">
+                    <div>
+                        <span class="text-[10px] text-slate-500 font-bold uppercase tracking-wider block">AWB Tracking Code</span>
+                        <span id="order-awb" class="font-mono text-base text-green-400 font-black">WRX-TRK-784920</span>
+                    </div>
+                    <div>
+                        <span class="text-[10px] text-slate-500 font-bold uppercase tracking-wider block">Order Reference ID</span>
+                        <span id="order-txnid" class="font-mono text-xs text-white font-bold print-text">ORD-982410</span>
+                    </div>
+                    <div>
+                        <span class="text-[10px] text-slate-500 font-bold uppercase tracking-wider block">Payment Mode</span>
+                        <span id="order-mode" class="font-heading font-bold text-xs text-white print-text">Secure Online Payment</span>
+                    </div>
+                    <div>
+                        <span class="text-[10px] text-slate-500 font-bold uppercase tracking-wider block">Delivery Status</span>
+                        <span id="order-status-badge" class="inline-block bg-amber-500/20 text-amber-400 font-bold text-[10px] px-2.5 py-0.5 rounded uppercase">📝 1. Ordered (Processing)</span>
+                    </div>
+                </div>
+
+                <!-- Live Track Action Card -->
+                <div class="no-print bg-green-500/10 border border-green-500/30 rounded-xl p-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+                    <div class="flex items-center gap-3 text-xs">
+                        <i class="fa-solid fa-truck-fast text-green-400 text-2xl"></i>
+                        <div>
+                            <span class="font-bold text-white block uppercase">Track Live Package Progress</span>
+                            <span class="text-[10px] text-slate-400">View real-time dispatch, transit, and delivery updates</span>
+                        </div>
+                    </div>
+                    <a id="btn-track-order" href="track.html" class="w-full sm:w-auto px-6 py-2.5 bg-green-600 hover:bg-green-700 text-white font-bold text-xs uppercase tracking-widest rounded-lg text-center shadow-lg transition">
+                        Track Shipment &rarr;
+                    </a>
+                </div>
+
+                <!-- Shipping Address -->
+                <div class="space-y-2 border-b border-white/10 pb-6">
+                    <h3 class="font-heading font-bold text-white print-text text-xs uppercase tracking-wider">Delivery Address</h3>
+                    <p id="order-customer" class="text-xs font-bold text-white print-text">-</p>
+                    <p id="order-address" class="text-xs text-slate-400 print-text leading-relaxed">-</p>
+                </div>
+
+                <!-- Purchased Items -->
+                <div class="space-y-4">
+                    <h3 class="font-heading font-bold text-white print-text text-xs uppercase tracking-wider">Order Items Summary</h3>
+                    <div id="order-items-list" class="divide-y divide-white/5">
+                        <!-- Populated dynamically -->
+                    </div>
+                    <div class="pt-4 border-t border-white/10 flex justify-between items-center">
+                        <span class="font-heading font-bold text-white print-text text-sm uppercase">Total Amount Paid</span>
+                        <span id="order-total" class="font-heading font-black text-2xl text-primary print-text">₹0</span>
+                    </div>
+                </div>
+
+                <!-- Print & Return Buttons -->
+                <div class="no-print pt-6 border-t border-white/10 flex flex-col sm:flex-row gap-4">
+                    <button onclick="window.print()" class="flex-1 py-3.5 bg-white/10 hover:bg-white/20 text-white font-bold text-xs uppercase tracking-widest rounded-xl flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-print"></i> Print Tax Invoice
+                    </button>
+                    <a href="index.html" class="flex-1 py-3.5 bg-primary hover:bg-primaryHover text-white font-bold text-xs uppercase tracking-widest rounded-xl text-center">
+                        Continue Shopping &rarr;
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="no-print bg-dark text-slate-500 py-6 text-center text-xs border-t border-white/5 space-y-1">
+        <p>&copy; 2026 WARAX GAMING • Express All-India Free Shipping</p>
+        
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const orderData = JSON.parse(localStorage.getItem('warax_last_order'));
+            if (!orderData) {
+                window.location.href = 'index.html';
+                return;
+            }
+
+            const awb = orderData.awb || 'WRX-TRK-784920';
+            document.getElementById('order-awb').innerText = awb;
+            document.getElementById('order-txnid').innerText = orderData.orderId || orderData.txnid;
+            document.getElementById('order-mode').innerText = `${orderData.paymentMode}`;
+            document.getElementById('order-customer').innerText = `${orderData.customerName} (${orderData.phone} • ${orderData.email})`;
+            document.getElementById('order-address').innerText = orderData.address;
+            document.getElementById('order-total').innerText = `₹${orderData.amount.toLocaleString('en-IN')}`;
+
+            document.getElementById('btn-track-order').href = `track.html?awb=${awb}`;
+
+            const list = document.getElementById('order-items-list');
+            list.innerHTML = orderData.items.map(item => `
+                <div class="py-3 flex justify-between items-center text-xs">
+                    <div class="flex items-center gap-3">
+                        <img src="${item.image}" alt="${item.name}" class="w-10 h-10 object-contain bg-dark rounded p-1">
+                        <div>
+                            <span class="font-heading font-bold text-white print-text block">${item.name}</span>
+                            <span class="text-slate-500 print-text">Qty: ${item.qty} × ₹${item.price.toLocaleString('en-IN')}</span>
+                        </div>
+                    </div>
+                    <span class="font-heading font-bold text-white print-text">₹${(item.price * item.qty).toLocaleString('en-IN')}</span>
+                </div>
+            `).join('');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Video Games & Discs | WARAX GAMING</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { heading: ['Montserrat', 'sans-serif'], body: ['Inter', 'sans-serif'] },
+                    colors: { primary: '#991b1b', primaryHover: '#7f1d1d', dark: '#09090b', surface: '#18181b', surfaceHover: '#27272a' },
+                    boxShadow: { 'glow': '0 0 40px -10px rgba(153, 27, 27, 0.4)' }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .hover-lift { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .hover-lift:hover { transform: translateY(-4px); }
+        .btn-anim { transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); }
+        .btn-anim:active { transform: scale(0.96); }
+    </style>
+</head>
+<body class="font-body bg-dark text-slate-300 antialiased selection:bg-primary selection:text-white min-h-screen flex flex-col">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full top-0 z-50 bg-dark/95 backdrop-blur-lg border-b border-white/5 h-16 sm:h-20 flex items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex justify-between items-center">
+            <a href="index.html" class="font-heading font-bold text-xl sm:text-2xl tracking-widest text-white uppercase">
+                WARAX<span class="text-primary">GAMING</span>
+            </a>
+            <div class="flex items-center gap-4 sm:gap-6">
+                <a href="track.html" class="text-green-400 hover:text-green-300 text-xs sm:text-sm font-semibold uppercase tracking-wider flex items-center gap-1.5">
+                    <i class="fa-solid fa-truck-fast"></i> <span class="hidden sm:inline">Track Order</span>
+                </a>
+                <a href="index.html" class="text-slate-400 hover:text-white text-xs sm:text-sm font-semibold uppercase tracking-wider flex items-center gap-2">
+                    <i class="fa-solid fa-arrow-left"></i> <span class="hidden sm:inline">Main Store</span>
+                </a>
+                <button onclick="openCartDrawer()" class="text-slate-400 hover:text-white relative p-2">
+                    <i class="fa-solid fa-cart-shopping text-lg"></i>
+                    <span id="cart-count-badge" class="cart-count-badge absolute top-0 right-0 bg-primary text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full border border-dark">0</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <main class="pt-24 sm:pt-32 pb-16 flex-grow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Page Title -->
+            <div class="mb-10 text-center sm:text-left">
+                <span class="text-primary font-bold text-xs uppercase tracking-widest block mb-1">Physical Game Discs & Cartridges</span>
+                <h1 class="font-heading font-black text-3xl sm:text-4xl text-white tracking-tight uppercase">Video Games Collection</h1>
+                <p class="text-slate-400 text-xs sm:text-sm mt-1 max-w-xl">Genuine physical video game discs with up to 40% OFF discount deals across PlayStation & Xbox consoles.</p>
+            </div>
+
+            <!-- 5 CATEGORY PLATFORM CARDS -->
+            <div class="mb-10">
+                <h2 class="font-heading font-bold text-xs uppercase tracking-widest text-slate-400 mb-4">Select Gaming Platform:</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4">
+                    
+                    <button onclick="filterByPlatform('PS5')" id="card-PS5" class="platform-card p-4 rounded-xl border border-white/10 bg-surface hover:bg-surfaceHover text-left flex flex-col justify-between group transition">
+                        <div class="flex items-center justify-between mb-2">
+                            <i class="fa-brands fa-playstation text-2xl text-blue-500"></i>
+                            <span class="text-[9px] font-black uppercase tracking-wider text-green-400 bg-green-500/10 px-2 py-0.5 rounded">PS5</span>
+                        </div>
+                        <span class="font-heading font-bold text-white text-sm group-hover:text-primary transition">PS5 Games</span>
+                    </button>
+
+                    <button onclick="filterByPlatform('PS4')" id="card-PS4" class="platform-card p-4 rounded-xl border border-white/10 bg-surface hover:bg-surfaceHover text-left flex flex-col justify-between group transition">
+                        <div class="flex items-center justify-between mb-2">
+                            <i class="fa-brands fa-playstation text-2xl text-blue-400"></i>
+                            <span class="text-[9px] font-black uppercase tracking-wider text-blue-400 bg-blue-500/10 px-2 py-0.5 rounded">PS4</span>
+                        </div>
+                        <span class="font-heading font-bold text-white text-sm group-hover:text-primary transition">PS4 Games</span>
+                    </button>
+
+                    <button onclick="filterByPlatform('PS3')" id="card-PS3" class="platform-card p-4 rounded-xl border border-white/10 bg-surface hover:bg-surfaceHover text-left flex flex-col justify-between group transition">
+                        <div class="flex items-center justify-between mb-2">
+                            <i class="fa-brands fa-playstation text-2xl text-slate-400"></i>
+                            <span class="text-[9px] font-black uppercase tracking-wider text-slate-300 bg-white/10 px-2 py-0.5 rounded">PS3</span>
+                        </div>
+                        <span class="font-heading font-bold text-white text-sm group-hover:text-primary transition">PS3 Games</span>
+                    </button>
+
+                    <button onclick="filterByPlatform('XBOX SERIES X')" id="card-XBOX SERIES X" class="platform-card p-4 rounded-xl border border-white/10 bg-surface hover:bg-surfaceHover text-left flex flex-col justify-between group transition">
+                        <div class="flex items-center justify-between mb-2">
+                            <i class="fa-brands fa-xbox text-2xl text-green-500"></i>
+                            <span class="text-[9px] font-black uppercase tracking-wider text-green-400 bg-green-500/10 px-2 py-0.5 rounded">Series X</span>
+                        </div>
+                        <span class="font-heading font-bold text-white text-sm group-hover:text-primary transition">XBOX Series X Games</span>
+                    </button>
+
+                    <button onclick="filterByPlatform('XBOX ONE')" id="card-XBOX ONE" class="platform-card p-4 rounded-xl border border-white/10 bg-surface hover:bg-surfaceHover text-left flex flex-col justify-between group transition">
+                        <div class="flex items-center justify-between mb-2">
+                            <i class="fa-brands fa-xbox text-2xl text-green-600"></i>
+                            <span class="text-[9px] font-black uppercase tracking-wider text-green-500 bg-green-500/10 px-2 py-0.5 rounded">Xbox One</span>
+                        </div>
+                        <span class="font-heading font-bold text-white text-sm group-hover:text-primary transition">XBOX One Games</span>
+                    </button>
+
+                </div>
+            </div>
+
+            <!-- Search & Filter Controls -->
+            <div class="bg-surface border border-white/10 p-4 rounded-xl mb-8 flex flex-col sm:flex-row gap-3 items-center justify-between">
+                <div class="relative w-full sm:w-80">
+                    <input type="text" id="game-search" oninput="renderGamesList()" placeholder="Search game title..." 
+                           class="w-full bg-dark border border-white/10 rounded-lg py-2.5 pl-10 pr-4 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-primary">
+                    <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-3 text-slate-500 text-xs"></i>
+                </div>
+                <div class="flex items-center gap-2">
+                    <button onclick="filterByPlatform('ALL')" id="btn-all-games" class="px-4 py-2 border border-white/10 rounded-lg text-xs font-bold text-slate-300 hover:text-white uppercase">All Games</button>
+                </div>
+            </div>
+
+            <!-- Games Grid -->
+            <div id="games-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-6">
+                <!-- Dynamically populated -->
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-slate-400 py-10 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs">
+            <span class="font-heading font-bold text-white uppercase tracking-widest">WARAX<span class="text-primary">GAMING</span></span>
+            <span>&copy; 2026 WARAX GAMING • All Rights Reserved</span>
+            <a href="index.html" class="text-primary font-semibold uppercase">Main Store &rarr;</a>
+        </div>
+    </footer>
+
+    <script src="products.js"></script>
+    <script src="payu-checkout.js"></script>
+    <script>
+        let currentPlatform = 'ALL';
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const platformParam = urlParams.get('platform');
+            if (platformParam) {
+                currentPlatform = platformParam.toUpperCase();
+            }
+            highlightActivePlatform();
+            renderGamesList();
+        });
+
+        function filterByPlatform(platform) {
+            currentPlatform = platform.toUpperCase();
+            highlightActivePlatform();
+            renderGamesList();
+        }
+
+        function highlightActivePlatform() {
+            document.querySelectorAll('.platform-card').forEach(card => {
+                card.classList.remove('border-primary', 'bg-surfaceHover');
+            });
+            
+            const activeCard = document.getElementById(`card-${currentPlatform}`);
+            if (activeCard) {
+                activeCard.classList.add('border-primary', 'bg-surfaceHover');
+            }
+
+            const allBtn = document.getElementById('btn-all-games');
+            if (allBtn) {
+                if (currentPlatform === 'ALL') {
+                    allBtn.classList.add('bg-primary', 'text-white');
+                } else {
+                    allBtn.classList.remove('bg-primary', 'text-white');
+                }
+            }
+        }
+
+        function renderGamesList() {
+            const grid = document.getElementById('games-grid');
+            if (!grid || typeof PRODUCTS_DATA === 'undefined') return;
+
+            const searchQuery = document.getElementById('game-search') ? document.getElementById('game-search').value.toLowerCase().trim() : '';
+
+            const allGames = PRODUCTS_DATA.filter(p => p.sheetCategory === 'Games');
+
+            let filtered = allGames.filter(item => {
+                let matchPlatform = true;
+                if (currentPlatform !== 'ALL') {
+                    const compat = (item.compatibility || '').toUpperCase();
+                    const sname = (item.sheet_name || '').toUpperCase();
+                    matchPlatform = compat.includes(currentPlatform) || sname.includes(currentPlatform);
+                }
+
+                let matchSearch = !searchQuery || item.name.toLowerCase().includes(searchQuery);
+
+                return matchPlatform && matchSearch;
+            });
+
+            if (filtered.length === 0) {
+                grid.innerHTML = `
+                    <div class="col-span-full py-16 text-center text-slate-500">
+                        <i class="fa-solid fa-compact-disc text-4xl mb-3"></i>
+                        <p class="text-xs">No games found for this platform selection.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            grid.innerHTML = filtered.map(item => {
+                const discPct = item.discount || Math.round(((item.originalPrice - item.price) / item.originalPrice) * 100);
+                return `
+                <a href="product.html?id=${item.id}" class="bg-surface border border-white/5 hover-lift p-3.5 sm:p-4 rounded-xl flex flex-col justify-between group no-underline text-left">
+                    <div>
+                        <div class="aspect-[3/4] bg-dark rounded-lg overflow-hidden mb-3 relative">
+                            <img src="${item.image}" alt="${item.name}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=800&auto=format&fit=crop'">
+                            <div class="absolute top-2 right-2 bg-green-600 text-white font-black text-[10px] px-2 py-0.5 rounded-md shadow-md z-10">${discPct}% OFF</div>
+                            ${item.compatibility ? `<div class="absolute bottom-2 left-2 bg-black/80 text-slate-300 text-[9px] font-bold px-1.5 py-0.5 rounded">${item.compatibility}</div>` : ''}
+                        </div>
+                        <span class="text-[9px] text-primary font-bold uppercase tracking-wider block mb-0.5">${item.brand || 'PlayStation'}</span>
+                        <h3 class="font-heading font-bold text-white text-xs sm:text-sm leading-snug line-clamp-2 group-hover:text-primary transition">${item.name}</h3>
+                    </div>
+                    <div class="mt-3 pt-3 border-t border-white/5 flex items-center justify-between">
+                        <div>
+                            <span class="font-heading font-black text-sm sm:text-base text-white">₹${item.price.toLocaleString('en-IN')}</span>
+                            ${item.originalPrice ? `<span class="text-slate-500 line-through text-[10px] block">₹${item.originalPrice.toLocaleString('en-IN')}</span>` : ''}
+                        </div>
+                        <button onclick="event.preventDefault(); event.stopPropagation(); addToCart(${item.id})" class="w-8 h-8 bg-white/5 hover:bg-primary text-white rounded-lg flex items-center justify-center transition">
+                            <i class="fa-solid fa-plus text-xs"></i>
+                        </button>
+                    </div>
+                </a>
+            `}).join('');
+        }
+    </script>
+</body>
+</html>
