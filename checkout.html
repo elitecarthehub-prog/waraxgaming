@@ -420,7 +420,8 @@ src="https://www.facebook.com/tr?id=1596400438741187&ev=PageView&noscript=1"
             TELEGRAM_BOT_TOKEN : "8641929746:AAEZFTsZwoc6k44OxOYO86QoyCip3QOx3zU",
             TELEGRAM_CHAT_ID   : "-1003888838712",
 
-            SECRET_PROMO   : "WARAX100",
+            SECRET_PROMO      : "WARAX100",
+            SECRET_TEST_PROMO : "OWNERTESTWARAX001",
             PUBLIC_COUPONS : {
                 "WARAX10" : 10,
                 "SAVE20"  : 20,
@@ -514,6 +515,14 @@ src="https://www.facebook.com/tr?id=1596400438741187&ev=PageView&noscript=1"
                 discount = Math.round(subtotal * 0.5);
                 couponApplied = true;
                 showCouponMsg('Special 50% Gamer Discount applied! 🎉', true);
+                renderSummary();
+                return;
+            }
+
+            if (code === CONFIG.SECRET_TEST_PROMO) {
+                discount = Math.max(0, subtotal - 1);
+                couponApplied = true;
+                showCouponMsg('TEST COUPON APPLIED — Total reduced to ₹1', true);
                 renderSummary();
                 return;
             }
@@ -696,6 +705,15 @@ src="https://www.facebook.com/tr?id=1596400438741187&ev=PageView&noscript=1"
                 }
             } else if (status === "failure") {
                 alert("Payment processing failed or was cancelled. Please try again.");
+                const pendingOrder = JSON.parse(localStorage.getItem("pendingOrder") || "null");
+                if (pendingOrder) {
+                    let allOrders = JSON.parse(localStorage.getItem('warax_orders')) || [];
+                    const targetId = pendingOrder.orderId || pendingOrder.txnid;
+                    allOrders = allOrders.filter(o => o.orderId !== targetId && o.txnid !== targetId);
+                    localStorage.setItem('warax_orders', JSON.stringify(allOrders));
+                    localStorage.removeItem('pendingOrder');
+                    localStorage.removeItem('warax_last_order');
+                }
             }
         }
 
