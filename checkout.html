@@ -9,23 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
-    
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: { heading: ['Montserrat', 'sans-serif'], body: ['Inter', 'sans-serif'] },
-                    colors: { primary: '#991b1b', primaryHover: '#7f1d1d', dark: '#09090b', surface: '#18181b', surfaceHover: '#27272a' },
-                    boxShadow: { 'glow': '0 0 40px -10px rgba(153, 27, 27, 0.4)' }
-                }
-            }
-        }
-    </script>
-    <style>
-        html { scroll-behavior: smooth; }
-        .btn-anim { transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); }
-        .btn-anim:active { transform: scale(0.97); }
-    </style>
+
     <!-- Meta Pixel Code -->
     <script>
     !function(f,b,e,v,n,t,s)
@@ -43,6 +27,23 @@
     src="https://www.facebook.com/tr?id=1596400438741187&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Meta Pixel Code -->
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { heading: ['Montserrat', 'sans-serif'], body: ['Inter', 'sans-serif'] },
+                    colors: { primary: '#991b1b', primaryHover: '#7f1d1d', dark: '#09090b', surface: '#18181b', surfaceHover: '#27272a' },
+                    boxShadow: { 'glow': '0 0 40px -10px rgba(153, 27, 27, 0.4)' }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .btn-anim { transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); }
+        .btn-anim:active { transform: scale(0.97); }
+    </style>
 </head>
 <body class="font-body bg-dark text-slate-300 antialiased selection:bg-primary selection:text-white min-h-screen flex flex-col">
 
@@ -324,7 +325,7 @@
         const CONFIG = {
             PAYU_URL    : "https://secure.payu.in/_payment",
             SUCCESS_URL : "https://waraxgaming.vercel.app/api/success",
-            FAILURE_URL : "https://waraxgaming.store/payment-failed.html",
+            FAILURE_URL : "https://waraxgaming.vercel.app/checkout.html?status=failure",
 
             TELEGRAM_BOT_TOKEN : "8641929746:AAEZFTsZwoc6k44OxOYO86QoyCip3QOx3zU",
             TELEGRAM_CHAT_ID   : "-1003888838712",
@@ -338,7 +339,7 @@
             }
         };
 
-        const BACKEND_URL = (window.location.origin && !window.location.origin.includes("file://")) ? window.location.origin : "https://waraxgaming.vercel.app";
+        const BACKEND_URL = "https://waraxgaming.vercel.app";
 
         let cart = JSON.parse(localStorage.getItem('warax_cart')) || [];
         let subtotal = 0;
@@ -349,17 +350,6 @@
         document.addEventListener('DOMContentLoaded', () => {
             renderSummary();
             handlePageStatus();
-
-            if (typeof fbq === 'function' && cart && cart.length > 0) {
-                const totalQty = cart.reduce((sum, item) => sum + item.qty, 0);
-                fbq('track', 'InitiateCheckout', {
-                    content_ids: cart.map(i => String(i.id)),
-                    content_type: 'product',
-                    value: finalAmt || subtotal,
-                    currency: 'INR',
-                    num_items: totalQty
-                });
-            }
         });
 
         function renderSummary() {
@@ -546,6 +536,15 @@
             localStorage.setItem('warax_orders', JSON.stringify(allOrders));
             localStorage.setItem('warax_last_order', JSON.stringify(pendingOrder));
             localStorage.setItem('pendingOrder', JSON.stringify(pendingOrder));
+
+            // Meta Pixel: track InitiateCheckout right before redirecting to gateway
+            if (typeof fbq === 'function') {
+                fbq('track', 'InitiateCheckout', {
+                    value: finalAmt,
+                    currency: 'INR',
+                    num_items: cart.reduce((sum, item) => sum + item.qty, 0)
+                });
+            }
 
             // INITIATE ONLINE PAYU GATEWAY:
             try {
